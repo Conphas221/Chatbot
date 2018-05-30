@@ -47,26 +47,6 @@ def ReceivedMessage(message):
 ##########################################################################################################################################
 
 <<<<<<< HEAD
-
-#def discordConnection():
-#    TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
-#    client = discord.Client()
-#    client.run(TOKEN)
-#    return client
-#client = discordConnection()
-
-#@client.event
-#async def on_message(message):
-#    if message.author == client.user:
-#        return
-#    chatbot.message(message)
-
-#@client.event
-#async def on_ready():
-#    print('Logged in as')
-#    print(self.client.user.name)
-#    print(self.client.user.id)
-#    print('------')
 =======
 def discordConnection():
     TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
