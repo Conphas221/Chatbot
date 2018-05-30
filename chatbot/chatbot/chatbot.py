@@ -133,7 +133,7 @@ def load_keywords(): #reads the keywords.txt file and returs a list with its con
 def lookup_matching_employee(inp):
 	keys = inp.lower().split(" ")
 	print("Not implemented yet!")
-	#return all users from database who match at least one of the entries in the keys list
+	#return all users from the database who have send a message that contains at least one of the entries in the keyword list
 
 def remove_keyword_entry():
 	keywords_tobe_removed = input("Enter the keywords you want to remove from the keyword list, seperated by spaces \n").lower().split(" ")
