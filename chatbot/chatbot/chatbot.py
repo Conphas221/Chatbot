@@ -177,13 +177,9 @@ def main():
 
 
 
-state = input("enter 0 for discord bot mode, enter 1 for data retrieval mode \n")
-if input == 0:
-	client = discordConnection()
-else:
-	main()
 
-
+client = discordConnection()
+main()
 
 #createTablesDB()
 
