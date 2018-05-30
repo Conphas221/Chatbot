@@ -46,8 +46,8 @@ def ReceivedMessage(message):
 #discordstuff start
 ##########################################################################################################################################
 
-<<<<<<< HEAD
-=======
+
+
 def discordConnection():
     TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
     client.run(TOKEN)
@@ -65,7 +65,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
->>>>>>> 66877c3e8fbedbf2a23b8b645bf2ae222f612739
+#>>>>>>> 66877c3e8fbedbf2a23b8b645bf2ae222f612739
 
 ##########################################################################################################################################
 #discordstuff end
@@ -97,7 +97,7 @@ def createTablesDB():
 #main program start
 ##########################################################################################################################################
 
-<<<<<<< HEAD
+
 
 
 
@@ -112,6 +112,8 @@ def func_caller(command):
 		display_keywords()
 	elif command == "-d":
 		remove_keyword_entry()
+	else:
+		print("Command not recognized, try again! \n")
 
 
 def lookup_matching_employee(inp):
@@ -176,12 +178,12 @@ def main():
 
 
 main()
-=======
+
 #createTablesDB()
 
 client = discordConnection()
 
->>>>>>> 66877c3e8fbedbf2a23b8b645bf2ae222f612739
+
 
 ##########################################################################################################################################
 #main program end
