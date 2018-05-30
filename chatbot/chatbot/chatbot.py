@@ -112,6 +112,8 @@ def func_caller(command):
 		display_keywords()
 	elif command == "-d":
 		remove_keyword_entry()
+	elif command == "-b":
+		client = discordConnection()
 	else:
 		print("Command not recognized, try again! \n")
 
@@ -167,7 +169,7 @@ def message(message):
 # Define main() function
 def main():
 	loop = True
-	print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list")
+	print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode")
 	while loop:
 		user_input = input()
 		if user_input[:1] != "-":
@@ -178,7 +180,7 @@ def main():
 
 
 
-client = discordConnection()
+
 main()
 
 #createTablesDB()
