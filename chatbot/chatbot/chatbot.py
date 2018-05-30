@@ -37,7 +37,7 @@ def addMessageToDB(message):
 
 #called when a message is received to further process it.
 def ReceivedMessage(message):
-    print("recieved a message from " + message.author.name)
+    print("received a message from " + message.author.name)
     addMessageToDB(message)
 
 #########################################################################################################################################
@@ -177,11 +177,17 @@ def main():
 
 
 
-main()
+state = input("enter 0 for discord bot mode, enter 1 for data retrieval mode \n")
+if input == 0:
+	client = discordConnection()
+else:
+	main()
+
+
 
 #createTablesDB()
 
-client = discordConnection()
+
 
 
 
