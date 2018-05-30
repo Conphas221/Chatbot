@@ -38,9 +38,8 @@ def addMessageToDB(message):
 #called when a message is received to further process it.
 def ReceivedMessage(message):
     print("received a message from " + message.author.name)
-    #print(message.content)  no privacy
     keywords = load_keywords()
-    if message.content.lower() in keywords:
+    if message.content.lower().split(" ") in keywords:       #if the message contains a keyword add to db
         addMessageToDB(message)
 
 #########################################################################################################################################
