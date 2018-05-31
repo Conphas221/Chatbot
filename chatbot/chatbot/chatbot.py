@@ -28,27 +28,14 @@ DBSession = sessionmaker(bind=engine)
 #functions start
 ##########################################################################################################################################
 
-#puts the message in the database
-def addMessageToDB(message):
-    session = DBSession()
-    m = Message(sender=message.author.name, content=message.content)
-    session.add(m)
-    session.commit()
-
-#called when a message is received to further process it.
-def ReceivedMessage(message):
-    print("received a message from " + message.author.name)
-    keywords = load_keywords()
-    if message.content.lower().split(" ") in keywords:       #if the message contains a keyword add to db
-        addMessageToDB(message)
+def message(message):
+    print('received a message from ' + message.author.name)
 
 #########################################################################################################################################
 #functions end
 
 #discordstuff start
 ##########################################################################################################################################
-
-
 
 def discordConnection():
     TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
@@ -67,43 +54,13 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
-#>>>>>>> 66877c3e8fbedbf2a23b8b645bf2ae222f612739
+
 
 ##########################################################################################################################################
 #discordstuff end
 
 #analyse start
 ##########################################################################################################################################
-
-
-
-##########################################################################################################################################
-#analyse end
-
-#database start
-##########################################################################################################################################
-
-class Message(Base):
-    __tablename__ = 'message'
-    id = Column(Integer, primary_key=True) 
-    sender = Column(String(50))
-    content = Column(String(500))
-
-def createTablesDB():
-    Base.metadata.create_all(engine)
-
-##########################################################################################################################################
-#database end
-
-
-#main program start
-##########################################################################################################################################
-
-
-
-
-
-
 
 #function that calls other functions, only called when user input starts with "-"
 def func_caller(command):
@@ -174,9 +131,58 @@ def display_keywords(): #prints all keywords, handles the file not found error
 	except:
 		print("File not found, create a new keyword list with the -k command")
 
-def message(message):
-    print('received a message from ' + message.author.name)
+##########################################################################################################################################
+#analyse end
 
+#database start
+##########################################################################################################################################
+
+class Message(Base):
+    __tablename__ = 'message'
+    id = Column(Integer, primary_key=True) 
+    sender = Column(String(50))
+    content = Column(String(500))
+
+def createTablesDB():
+    Base.metadata.create_all(engine)
+
+#puts the message in the database
+def addMessageToDB(message):
+    session = DBSession()
+    m = Message(sender=message.author.name, content=message.content)
+    session.add(m)
+    session.commit()
+
+#called when a message is received to further process it.
+def ReceivedMessage(message):
+    print("received a message from " + message.author.name)
+    keywords = load_keywords()
+    words = message.content.lower().split(" ")
+    for i in range(0, len(words)):
+        if words[i] in keywords:       #if the message contains a keyword add to db
+            addMessageToDB(message)
+            print("message saved")
+            break
+        
+    
+
+def GetAllMessagesWith(keyword):
+    session = DBSession()
+    messages = session.query(Message).all()
+    ret = []
+    for i in range(1, len(messages)):
+        m = messages[i]
+        print(m.sender + ": " + m.content)
+        if m.content.lower().split(" ") == keyword:
+            ret.append(m)
+
+
+##########################################################################################################################################
+#database end
+
+
+#main program start
+##########################################################################################################################################
 
 # Define main() function
 def main():
@@ -189,15 +195,9 @@ def main():
 		else:
 			func_caller(user_input[:2])
 
-
-
-
-
-main()
-
+GetAllMessagesWith("c#")
 #createTablesDB()
-
-
+main()
 
 
 
