@@ -94,8 +94,8 @@ def lookup_matching_employee(inp):
 	keys = inp.lower().split(" ")
 	#for words in keys:
 	#	printMessages(GetAllMessagesWith(words))
-	#printMessages(GetAllMessagesWith(keys))
-	print(GetAllAuthorsWith(keys))
+	printMessages(GetAllMessagesWith(keys))
+	#print(GetAllAuthorsWith(keys))
 	#return all users from the database who have send a message that contains at least one of the entries in the keyword list
 
 def remove_keyword_entry():
@@ -194,6 +194,7 @@ def GetAllMessagesWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
     ret = []
+    retcheck = []
     if not keyword == None:
         for i in range(0, len(messages)):
             m = messages[i]
@@ -204,7 +205,9 @@ def GetAllMessagesWith(keyword=None):
                 if keyword[j] not in words:
                     not_matched = True
             if not not_matched:
-                ret.append(m)
+                if not m.content in retcheck:
+                    ret.append(m)
+                    retcheck.append(m.content)
 
 
         if ret == []:
