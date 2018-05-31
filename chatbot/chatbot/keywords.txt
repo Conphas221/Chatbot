@@ -1,3 +1,9 @@
 chatbot
 c#
 compile
+error
+exception
+reference
+python
+java
+f#
