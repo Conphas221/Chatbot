@@ -92,8 +92,9 @@ def load_keywords(): #reads the keywords.txt file and returs a list with its con
 
 def lookup_matching_employee(inp):
 	keys = inp.lower().split(" ")
-	for words in keys:
-		printMessages(GetAllMessagesWith(words))
+	#for words in keys:
+	#	printMessages(GetAllMessagesWith(words))
+	printMessages(GetAllMessagesWith(keys))
 	#return all users from the database who have send a message that contains at least one of the entries in the keyword list
 
 def remove_keyword_entry():
@@ -167,6 +168,23 @@ def ReceivedMessage(message):
             print("message saved")
             break
 
+#def GetAllMessagesWith(keyword=None):
+#    session = DBSession()
+#    messages = session.query(Message).all()
+#    ret = []
+#    if not keyword == None:
+#        for i in range(0, len(messages)):
+#            m = messages[i]
+#            #print(m.sender + ": " + m.content)
+#            words = m.content.lower().split(" ")
+#            added = False
+#            for j in range(0, len(words)):
+#                if not added:
+#                    if words[j] == keyword:
+#                        ret.append(m)
+#                        added = True
+#        return ret
+#    return messages
 def GetAllMessagesWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
@@ -176,12 +194,16 @@ def GetAllMessagesWith(keyword=None):
             m = messages[i]
             #print(m.sender + ": " + m.content)
             words = m.content.lower().split(" ")
-            added = False
-            for j in range(0, len(words)):
-                if not added:
-                    if words[j] == keyword:
-                        ret.append(m)
-                        added = True
+            not_matched = False
+            for j in range(0, len(keyword)):
+                if keyword[j] not in words:
+                    not_matched = True
+            if not not_matched:
+                ret.append(m)
+
+
+        if ret == []:
+            print("No people with relevant experience found, please consult the documentation or a manager")
         return ret
     return messages
 
