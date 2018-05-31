@@ -92,7 +92,8 @@ def load_keywords(): #reads the keywords.txt file and returs a list with its con
 
 def lookup_matching_employee(inp):
 	keys = inp.lower().split(" ")
-	print("Not implemented yet!")
+	for words in keys:
+		printMessages(GetAllMessagesWith(words))
 	#return all users from the database who have send a message that contains at least one of the entries in the keyword list
 
 def remove_keyword_entry():
@@ -195,7 +196,7 @@ def GetAllMessagesWith(keyword=None):
 # Define main() function
 def main():
 	loop = True
-	print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode")
+	print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 	while loop:
 		user_input = input().lower()
 		if user_input[:1] != "-":

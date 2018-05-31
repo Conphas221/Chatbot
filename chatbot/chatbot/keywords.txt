@@ -7,3 +7,5 @@ reference
 python
 java
 f#
+typescript
+indentation
