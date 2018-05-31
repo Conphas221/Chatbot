@@ -234,7 +234,7 @@ def main():
 		else:
 			func_caller(user_input[:2])
 
-printMessages(GetAllMessagesWith())
+#printMessages(GetAllMessagesWith())
 #createTablesDB()
 main()
 
