@@ -31,6 +31,10 @@ DBSession = sessionmaker(bind=engine)
 def message(message):
     print('received a message from ' + message.author.name)
 
+def printMessages(messages):
+    for i in range(0, len(messages)):
+        print(messages[i].sender + ": " + messages[i].content)
+
 #########################################################################################################################################
 #functions end
 
@@ -76,7 +80,6 @@ def func_caller(command):
 	else:
 		print("Command not recognized, try again! \n")
 
-
 def load_keywords(): #reads the keywords.txt file and returs a list with its content
 	try:
 		f = open("keywords.txt","r")
@@ -108,7 +111,6 @@ def remove_keyword_entry():
 		f.close()
 	except:
 		print("File not found, create a new keyword list with the -k command")
-
 
 def keyword_update(new_keywords,id): #updates the keyword file, creates it if it doesn't exist.
 	if id == 0:
@@ -163,18 +165,24 @@ def ReceivedMessage(message):
             addMessageToDB(message)
             print("message saved")
             break
-        
-    
 
-def GetAllMessagesWith(keyword):
+def GetAllMessagesWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
     ret = []
-    for i in range(1, len(messages)):
-        m = messages[i]
-        print(m.sender + ": " + m.content)
-        if m.content.lower().split(" ") == keyword:
-            ret.append(m)
+    if not keyword == None:
+        for i in range(0, len(messages)):
+            m = messages[i]
+            #print(m.sender + ": " + m.content)
+            words = m.content.lower().split(" ")
+            added = False
+            for j in range(0, len(words)):
+                if not added:
+                    if words[j] == keyword:
+                        ret.append(m)
+                        added = True
+        return ret
+    return messages
 
 
 ##########################################################################################################################################
@@ -195,11 +203,9 @@ def main():
 		else:
 			func_caller(user_input[:2])
 
-GetAllMessagesWith("c#")
+printMessages(GetAllMessagesWith())
 #createTablesDB()
 main()
-
-
 
 ##########################################################################################################################################
 #main program end
