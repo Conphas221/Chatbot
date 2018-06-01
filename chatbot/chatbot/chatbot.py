@@ -28,9 +28,11 @@ DBSession = sessionmaker(bind=engine)
 #functions start
 ##########################################################################################################################################
 
+#prints a notification when a message is received
 def message(message):
     print('received a message from ' + message.author.name)
 
+#prints a list of messages
 def printMessages(messages):
     for i in range(0, len(messages)):
         print(messages[i].sender + ": " + messages[i].content)
@@ -41,17 +43,20 @@ def printMessages(messages):
 #discordstuff start
 ##########################################################################################################################################
 
+#function to start discord mode
 def discordConnection():
     TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
     client.run(TOKEN)
     return client
 
+#function that triggers on the event on_message, telling the bot to read the message
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-    ReceivedMessage(message)
+    await ReceivedMessage(message)
 
+#function that triggers on the event on_ready, to tell the user that discord is live
 @client.event
 async def on_ready():
     print('Logged in as')
@@ -69,7 +74,7 @@ async def on_ready():
 #function that calls other functions, only called when user input starts with "-"
 def func_caller(command):
 	if command == "-k":
-		parameter = input("Enter the keywords you want to add to the keyword list, seperated by spaces \n").lower().split(" ") #aks the user for input and split it on space
+		parameter = input("Enter the keywords you want to add to the keyword list, seperated by spaces \n").lower().split(" ") #asks the user for input and split it on space
 		keyword_update(parameter,0)
 	elif command == "-s":
 		display_keywords()
@@ -92,10 +97,7 @@ def load_keywords(): #reads the keywords.txt file and returs a list with its con
 
 def lookup_matching_employee(inp):
 	keys = inp.lower().split(" ")
-	#for words in keys:
-	#	printMessages(GetAllMessagesWith(words))
-	printMessages(GetAllMessagesWith(keys))
-	#print(GetAllAuthorsWith(keys))
+	return GetAllAuthorsWith(keys)
 	#return all users from the database who have send a message that contains at least one of the entries in the keyword list
 
 def remove_keyword_entry():
@@ -136,18 +138,41 @@ def display_keywords(): #prints all keywords, handles the file not found error
 	except:
 		print("File not found, create a new keyword list with the -k command")
 
+#checks a message for answering it with information
+def startLookUp(message):
+    inp = ""
+    words = message.content.lower().split(" ")
+    keywords = load_keywords()
+    for i in range(0, len(words)):
+        if words[i] in keywords:
+            inp += words[i] + " "
+    if inp[len(inp)-1] == ' ':
+        newInp=""
+        for i in range(0,len(inp)-1):
+            newInp+=inp[i]
+        inp = newInp
+    users = lookup_matching_employee(inp)
+    if users == "No people with relevant experience found, please consult the documentation or a manager":
+        return users
+    msg = "These employee(s) might be able to help you:\n"
+    for i in range(0, len(users)):
+        msg += users[i] + "\n"
+    return msg
+
 ##########################################################################################################################################
 #analyse end
 
 #database start
 ##########################################################################################################################################
 
+#class Message for the database
 class Message(Base):
     __tablename__ = 'message'
     id = Column(Integer, primary_key=True) 
     sender = Column(String(50))
     content = Column(String(500))
 
+#function to create a table in the database
 def createTablesDB():
     Base.metadata.create_all(engine)
 
@@ -159,16 +184,21 @@ def addMessageToDB(message):
     session.commit()
 
 #called when a message is received to further process it.
-def ReceivedMessage(message):
+async def ReceivedMessage(message):
     print("received a message from " + message.author.name)
     keywords = load_keywords()
     words = message.content.lower().split(" ")
     for i in range(0, len(words)):
-        if words[i] in keywords:       #if the message contains a keyword add to db
-            addMessageToDB(message)
-            print("message saved")
-            break
+        if words[i] in keywords:       
+            if(message.channel.is_private):#if the message is send directly to the bot, answer the message
+                await client.send_message(message.channel, startLookUp(message))
+                break
+            else:#if the message contains a keyword add to db
+                addMessageToDB(message)
+                print("message saved")
+                break
 
+#gets all unique authors in the db with a specified keyword in one or more of their messages or all unique authors if no keyword is specified
 def GetAllAuthorsWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
@@ -186,10 +216,11 @@ def GetAllAuthorsWith(keyword=None):
                     ret.append(m.sender)
 
         if ret == []:
-            print("No people with relevant experience found, please consult the documentation or a manager")
+            return "No people with relevant experience found, please consult the documentation or a manager"
         return ret
     return messages
 
+#gets all unique messages in the db with a specified keyword or all messages if no keyword is specified
 def GetAllMessagesWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
@@ -214,7 +245,6 @@ def GetAllMessagesWith(keyword=None):
             print("No people with relevant experience found, please consult the documentation or a manager")
         return ret
     return messages
-
 
 ##########################################################################################################################################
 #database end
