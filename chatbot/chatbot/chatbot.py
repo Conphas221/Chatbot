@@ -10,6 +10,8 @@ from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+import analyse
+
 ##########################################################################################################################################
 #imports end
 
@@ -259,10 +261,13 @@ def main():
 	print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 	while loop:
 		user_input = input().lower()
-		if user_input[:1] != "-":
-			lookup_matching_employee(user_input)
-		else:
-			func_caller(user_input[:2])
+		#if user_input[:1] != "-":
+		#	lookup_matching_employee(user_input)
+		#else:
+			#func_caller(user_input[:2])
+		annotations = analyse.AnalyseText(user_input)
+		for a in annotations:
+		    print(a.spot)
 
 #printMessages(GetAllMessagesWith())
 #createTablesDB()
