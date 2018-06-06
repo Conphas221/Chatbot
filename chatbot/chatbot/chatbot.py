@@ -37,7 +37,7 @@ def RunCommand(command, args):
 
 # Define main() function
 def main():
-    # Register comamnds
+    # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
     RegisterCommand("quit", lambda args : exit())
 
@@ -46,7 +46,7 @@ def main():
         # Obtain the user input from the command line
         user_input = input().lower()
 
-        # Run a command, if the comamnd is not found, analyse the user input
+        # Run a command, if the command is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False):
             userInput.HandleInput(user_input)
 
