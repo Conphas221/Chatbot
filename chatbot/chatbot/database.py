@@ -1,3 +1,4 @@
+import discord
 import sqlalchemy
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -21,10 +22,16 @@ def createTablesDB():
 
 #puts the message in the database
 def addMessageToDB(message):
-    session = DBSession()
-    m = Message(sender=message.author.name, content=message.content)
-    session.add(m)
-    session.commit()
+    try:
+        session = DBSession()
+        sender = message.author.name
+        content = message.content
+        m = Message(sender=sender, content=content)
+        session.add(m)
+        session.commit()
+        session.close()
+    finally:
+        print(message.author.name + ": " + message.content)
 
 #called when a message is received to further process it.
 def ReceivedMessage(message):
