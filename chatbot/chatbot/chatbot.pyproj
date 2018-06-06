@@ -25,6 +25,9 @@
     <Compile Include="analyse.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="database.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="discordIntergration.py">
       <SubType>Code</SubType>
     </Compile>
