@@ -1,3 +1,15 @@
+import sqlalchemy
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+Base = declarative_base()
+engine = create_engine('sqlite:///messages.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+
 class Message(Base):
     __tablename__ = 'message'
     id = Column(Integer, primary_key=True) 
