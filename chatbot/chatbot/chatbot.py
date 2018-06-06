@@ -10,6 +10,7 @@ from sqlalchemy.orm import sessionmaker
 import analyse
 import discordIntergration
 import userInput
+import database
 
 # Command class
 class Command:
