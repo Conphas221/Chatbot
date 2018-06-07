@@ -11,7 +11,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    print("Message received")
+    print("Message received from {0}".format(message.author.name))
 
     resultString = "Something went wrong while processing your message."
 
