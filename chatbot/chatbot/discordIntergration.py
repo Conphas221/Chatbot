@@ -1,5 +1,6 @@
 import discord
 import userInput
+import database
 
 client = discord.Client()
 
