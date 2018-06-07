@@ -22,6 +22,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="chatbot.py" />
+    <Compile Include="analyse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="database.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="discordIntergration.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="userInput.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
