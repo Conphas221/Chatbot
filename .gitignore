@@ -102,3 +102,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+chatbot/.vs/chatbot/v15/.suo
