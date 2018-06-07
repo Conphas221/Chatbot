@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.types import Date
 from sqlalchemy.sql.expression import func
+from sqlalchemy import update
 
 import _datetime as datetime
 
@@ -16,7 +17,7 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 
 class Message(Base):
-    __tablename__ = 'message'
+    __tablename__ = 'Message'
     id = Column(Integer, primary_key=True) 
     sender = Column(String(50), primary_key=True)
     keyword = Column(String(500), primary_key=True)
@@ -42,10 +43,20 @@ def addMessageToDB(message, keywords):
             sender = message.author.name
             keyword = keywords[i].title
             date = datetime.datetime.now()
-            id=getId(session)
-            m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=100)
-            session.add(m)
-            session.commit()
+            messages = session.query(Message).all()
+            add = True;
+            for i in range(0, len(messages)):
+                mess = messages[i]
+                if(mess.sender == sender and mess.keyword == keyword):
+                    add = False
+                    freq = mess.frequency + 1
+                    session.query(Message).filter_by(id=mess.id).update({"frequency":freq})
+                    session.commit()
+            if(add):
+                id=getId(session)
+                m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=100)
+                session.add(m)
+                session.commit()
             session.close()
         except:
             print(message.author.name + ": " + message.content)
