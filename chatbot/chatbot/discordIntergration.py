@@ -18,7 +18,7 @@ async def on_message(message):
     try:
         keywords = userInput.HandleInputInternal(message.content)
         if(len(keywords) > 0):
-            database.addMessageToDB(message)
+            database.addMessageToDB(message, keywords)
         resultString = "Found the following keywords in your message: "
 
         for keyword in keywords:

@@ -5,6 +5,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.types import Date
+
+import _datetime as datetime
 
 Base = declarative_base()
 engine = create_engine('sqlite:///messages.db')
@@ -13,25 +16,30 @@ DBSession = sessionmaker(bind=engine)
 
 class Message(Base):
     __tablename__ = 'message'
-    id = Column(Integer, primary_key=True) 
-    sender = Column(String(50))
-    content = Column(String(500))
+    id = Column(Integer, primary_key=True, autoincrement=True) 
+    sender = Column(String(50), primary_key=True)
+    keyword = Column(String(500), primary_key=True)
+    frequency = Column(Integer)
+    lastDate = Column(Date)
 
 def createTablesDB():
     Base.metadata.create_all(engine)
 
 #puts the message in the database
-def addMessageToDB(message):
-    try:
-        session = DBSession()
-        sender = message.author.name
-        content = message.content
-        m = Message(sender=sender, content=content)
-        session.add(m)
-        session.commit()
-        session.close()
-    finally:
-        print(message.author.name + ": " + message.content)
+def addMessageToDB(message, keywords):
+    for i in range(0, len(keywords)):
+        try:
+            session = DBSession()
+            sender = message.author.name
+            keyword = keywords[i].title
+            date = datetime.datetime.now()
+            id=0
+            m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date)
+            session.add(m)
+            session.commit()
+            session.close()
+        except:
+            print(message.author.name + ": " + message.content)
 
 #called when a message is received to further process it.
 def ReceivedMessage(message):
