@@ -6,6 +6,7 @@ from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.types import Date
+from sqlalchemy.sql.expression import func
 
 import _datetime as datetime
 
@@ -16,14 +17,22 @@ DBSession = sessionmaker(bind=engine)
 
 class Message(Base):
     __tablename__ = 'message'
-    id = Column(Integer, primary_key=True, autoincrement=True) 
+    id = Column(Integer, primary_key=True) 
     sender = Column(String(50), primary_key=True)
     keyword = Column(String(500), primary_key=True)
     frequency = Column(Integer)
     lastDate = Column(Date)
+    recommendation = Column(Integer)
 
 def createTablesDB():
     Base.metadata.create_all(engine)
+
+def getId(session):
+    qry = session.query(func.max(Message.id))
+    id = qry.one()[0]    
+    if id == None:
+        return 0
+    return id + 1
 
 #puts the message in the database
 def addMessageToDB(message, keywords):
@@ -33,8 +42,8 @@ def addMessageToDB(message, keywords):
             sender = message.author.name
             keyword = keywords[i].title
             date = datetime.datetime.now()
-            id=0
-            m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date)
+            id=getId(session)
+            m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=100)
             session.add(m)
             session.commit()
             session.close()
