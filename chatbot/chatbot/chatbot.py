@@ -9,6 +9,8 @@ from textblob import TextBlob
 import nltk
 
 #nltk.download('punkt')
+#nltk.download('punkt')
+#nltk.download('wordnet')
 # Command class
 
 class Command:
@@ -51,7 +53,8 @@ def main():
     while True:
         # Obtain the user input from the command line
         user_input = input().lower()
-        blob = TextBlob(user_input)
+        blob = TextBlob(user_input) #creates a textblob variable of the input
+        #print(analyse.IsQuestion(blob))
                         
 
 
@@ -61,6 +64,14 @@ def main():
         if (RunCommand(user_input, user_input) == False) and (blob.words != []):
            #userInput.HandleInput(user_input)
            #analyse.sentiment(user_input)
+        ## Run a command, if the comamnd is not found, analyse the user input
+        #if (RunCommand(user_input, user_input) == False) and (blob.words != []):
+        #    #userInput.HandleInput(user_input)
+        #    analyse.sentiment(user_input)
+
+        # Run a command, if the command is not found, analyse the user input
+        if (RunCommand(user_input, user_input) == False) and (blob.words != []): #makes sure HandleInput is not passed null or empty
+           userInput.HandleInput(user_input)
            # print(user_input)
            analyse.wordnet(user_input)
 
