@@ -5,8 +5,18 @@ import discordIntergration
 from textblob import Word
 from textblob.wordnet import *
 
-
-
+#needs to be given a textblob text
+def IsQuestion(text):
+    question = False
+    questionmarker = ["?","how","why","what","where","who"] #array of question indicators
+    if ("?" in text) or (", right" in text): #checks for two specific question indicators that the loop has trouble with
+        return not question
+    for i in range(0,len(text.words)): #compares every word in the given text with the words in the questionmarker array
+        for j in range(0,len(questionmarker)):
+            if text.words[i] == questionmarker[j]:# or ("?" in text) or (", right" in text):
+                return not question #= True
+                #break
+    return question
 
 
 def AnalyseText(text):

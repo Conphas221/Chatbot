@@ -7,8 +7,8 @@ import userInput
 import database
 from textblob import TextBlob
 import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
+#nltk.download('punkt')
+#nltk.download('wordnet')
 # Command class
 
 class Command:
@@ -52,6 +52,7 @@ def main():
         # Obtain the user input from the command line
         user_input = input().lower()
         blob = TextBlob(user_input)
+        #print(analyse.IsQuestion(blob))
                         
 
 
