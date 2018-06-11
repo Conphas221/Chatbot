@@ -54,7 +54,7 @@ def addMessageToDB(message, keywords):
                     session.commit()
             if(add):
                 id=getId(session)
-                m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=100)
+                m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=50)
                 session.add(m)
                 session.commit()
             session.close()
@@ -117,3 +117,15 @@ def GetAllMessagesWith(keyword=None):
             print("No people with relevant experience found, please consult the documentation or a manager")
         return ret
     return messages
+
+def GetTopAuthorWith(keyword):
+    messages = GetAllMessagesWith(keyword)
+    best = messages[0]
+    for i in range(1,len(messages)):
+        m = messages[i]
+        if i == 0:
+            best = m
+        else:
+            if(m.recommendation > best.recommendation):
+                best = m
+    return best.author

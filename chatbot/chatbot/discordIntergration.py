@@ -42,5 +42,6 @@ def main():
     print("Starting discord bot...")
 
     # run discord bot
-    TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
+    file = open("botinfo.txt", "r")
+    TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI'
     client.run(TOKEN)
