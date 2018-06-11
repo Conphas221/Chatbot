@@ -15,7 +15,6 @@ def AnalyseText(text):
 
     return response.annotations
 
-<<<<<<< HEAD
 
 #def sentiment(text):
 #    text2 = TextBlob(text)
@@ -26,6 +25,3 @@ def wordnet(text):
     word = Word(text)
     word.get_synsets
     print (word)
-
-=======
->>>>>>> 3728052f58e836789e2a1ba4832906f62210e977
