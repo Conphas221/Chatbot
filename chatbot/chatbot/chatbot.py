@@ -51,7 +51,7 @@ def main():
     while True:
         # Obtain the user input from the command line
         user_input = input().lower()
-        blob = TextBlob(user_input)
+        blob = TextBlob(user_input) #creates a textblob variable of the input
         #print(analyse.IsQuestion(blob))
                         
 
@@ -62,7 +62,7 @@ def main():
         #    analyse.sentiment(user_input)
 
         # Run a command, if the command is not found, analyse the user input
-        if (RunCommand(user_input, user_input) == False) and (blob.words != []):
+        if (RunCommand(user_input, user_input) == False) and (blob.words != []): #makes sure HandleInput is not passed null or empty
            userInput.HandleInput(user_input)
            # print(user_input)
 
