@@ -4,6 +4,8 @@ import nltk
 import discordIntergration
 from textblob import Word
 from textblob.wordnet import *
+
+import database
 #from nltk.corpus import *
 
 #nltk.download()#for de download van nltk corpora
@@ -31,7 +33,8 @@ def AnalyseText(text):
 
 def sentiment(text):
     text2 = TextBlob(text)
-    print (text2.sentiment)
+    #print (text2.sentiment)
+    return text2.polarity
     
 def wordnet(text):
     #word = Word("octopus")
@@ -43,3 +46,17 @@ def wordnet(text):
     #Word("octopus").definition
     #print(syns[0].definition())
     print(syns.detect_language())
+
+def updateScoreMessage(message, Message):
+    currentscore = Message.recommendation
+    scoreModifier = 1 - (currentscore/100)
+    if (Message.frequency + 1) % 10 == 0:
+        currentscore += 1 * scoreModifier
+    if sentiment(message.content) >= 0:
+        currentscore += 5 * scoreModifier
+    else:
+        currentscore -= 5 * scoreModifier
+    return round(currentscore, 3)
+
+def updateScoreTime(message, currentscore):
+    scoreModifier = 1 - (currentscore/100)

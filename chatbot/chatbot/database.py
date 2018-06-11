@@ -1,6 +1,6 @@
 import discord
 import sqlalchemy
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -10,6 +10,8 @@ from sqlalchemy.sql.expression import func
 from sqlalchemy import update
 
 import _datetime as datetime
+
+import analyse
 
 Base = declarative_base()
 engine = create_engine('sqlite:///messages.db')
@@ -23,7 +25,7 @@ class Message(Base):
     keyword = Column(String(500), primary_key=True)
     frequency = Column(Integer)
     lastDate = Column(Date)
-    recommendation = Column(Integer)
+    recommendation = Column(Float)
 
 def createTablesDB():
     Base.metadata.create_all(engine)
@@ -50,11 +52,12 @@ def addMessageToDB(message, keywords):
                 if(mess.sender == sender and mess.keyword == keyword):
                     add = False
                     freq = mess.frequency + 1
-                    session.query(Message).filter_by(id=mess.id).update({"frequency":freq})
+                    newScore = analyse.updateScoreMessage(message, mess)
+                    session.query(Message).filter_by(id=mess.id).update({"frequency":freq, "recommendation":newScore})
                     session.commit()
             if(add):
                 id=getId(session)
-                m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=50)
+                m = Message(id=id, sender=sender, keyword=keyword, frequency=1, lastDate=date, recommendation=50.0)
                 session.add(m)
                 session.commit()
             session.close()
