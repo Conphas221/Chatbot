@@ -48,7 +48,8 @@ def main():
 
         # Run a command, if the comamnd is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False):
-            userInput.HandleInput(user_input)
+            #userInput.HandleInput(user_input)
+            analyse.sentiment(user_input)
 
 # run the main function
 main()
