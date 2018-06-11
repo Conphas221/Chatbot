@@ -42,12 +42,9 @@ def RunCommand(command, args):
 def main():
     # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
-    RegisterCommand("-k", lambda args : None)
-    RegisterCommand("-s", lambda args : None)
-    RegisterCommand("-d", lambda args : None)
     RegisterCommand("quit", lambda args : exit())
 
-    print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
+    print("use the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 
     # Command loop
     while True:
