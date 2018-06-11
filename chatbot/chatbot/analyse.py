@@ -56,7 +56,27 @@ def updateScoreMessage(message, Message):
         currentscore += 5 * scoreModifier
     else:
         currentscore -= 5 * scoreModifier
+    if currentscore > 100.0:
+        currentscore = 100.0
     return round(currentscore, 3)
 
-def updateScoreTime(message, currentscore):
+def updateScoreTime(Message, date):
+    print(str(Message.id) + ": " + str(date))
+    currentscore = Message.recommendation
     scoreModifier = 1 - (currentscore/100)
+    if(scoreModifier < 0.1):
+        scoreModifier = 0.1
+    lastmonth = Message.lastDate.month + (Message.lastDate.year * 12)
+    currentmonth = date.month + (date.year * 12)
+    updateMessage = False
+    if(currentmonth - lastmonth >= 2):
+        currentscore -= 1 * scoreModifier
+        updateMessage = True
+    if updateMessage:
+        try:
+            session = database.getDBSession()
+            session.query(database.Message).filter_by(id=Message.id).update({"recommendation":currentscore})
+            session.commit()
+            session.close()
+        except:
+            print("something went wrong whilst updating the recommendation score")

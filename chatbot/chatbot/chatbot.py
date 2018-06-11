@@ -1,6 +1,6 @@
 #import discord
 
-
+import _datetime as datetime
 import analyse
 import discordIntergration
 import userInput
@@ -51,13 +51,17 @@ def main():
 
     # Command loop
     while True:
+        date = datetime.datetime.now()
+        if(date.hour == 19 and date.minute == 50 and date.second == 0):
+            messages = database.GetAllMessagesWith()
+            for i in range(0, len(messages)):
+                analyse.updateScoreTime(messages[i], date)
         # Obtain the user input from the command line
         user_input = input().lower()
         blob = TextBlob(user_input) #creates a textblob variable of the input
         #print(analyse.IsQuestion(blob))
                         
-
-
+        
 
 
         # Run a command, if the command is not found, analyse the user input

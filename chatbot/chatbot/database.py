@@ -18,6 +18,9 @@ engine = create_engine('sqlite:///messages.db')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 
+def getDBSession():
+    return DBSession()
+
 class Message(Base):
     __tablename__ = 'Message'
     id = Column(Integer, primary_key=True) 
