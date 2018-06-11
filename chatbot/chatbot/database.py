@@ -73,23 +73,16 @@ def ReceivedMessage(message):
             break
 
 def GetAllAuthorsWith(keyword=None):
-    session = DBSession()
-    messages = session.query(Message).all()
+    messages = GetAllMessagesWith(keyword)
+    if messages=="No people with relevant experience found, please consult the documentation or a manager":
+        return messages
     ret = []
     if not keyword == None:
         for i in range(0, len(messages)):
-            m = messages[i]
-            words = m.content.lower().split(" ")
-            not_matched = False
-            for j in range(0, len(keyword)):
-                if keyword[j] not in words:
-                    not_matched = True
-            if not not_matched:
-                if not m.sender in ret:
-                    ret.append(m.sender)
+            ret.append(messages[i].sender)
 
         if ret == []:
-            print("No people with relevant experience found, please consult the documentation or a manager")
+            return("No people with relevant experience found, please consult the documentation or a manager")
         return ret
     return messages
 
