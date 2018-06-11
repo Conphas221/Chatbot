@@ -5,8 +5,11 @@ import analyse
 import discordIntergration
 import userInput
 import database
-
+from textblob import TextBlob
+import nltk
+nltk.download('punkt')
 # Command class
+
 class Command:
     def __init__(self, command, callback):
         self.command = command
@@ -47,10 +50,15 @@ def main():
     while True:
         # Obtain the user input from the command line
         user_input = input().lower()
+        blob = TextBlob(user_input)
+                        
 
         # Run a command, if the command is not found, analyse the user input
-        if (RunCommand(user_input, user_input) == False):
-            userInput.HandleInput(user_input)
+        if (RunCommand(user_input, user_input) == False) and (blob.words != []):
+           userInput.HandleInput(user_input)
+           # print(user_input)
 
 # run the main function
 main()
+
+
