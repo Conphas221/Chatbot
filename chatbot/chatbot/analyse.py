@@ -5,7 +5,7 @@ import discordIntergration
 from textblob import Word
 from textblob.wordnet import *
 
-nltk.download('wordnet')
+
 
 
 

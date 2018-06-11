@@ -8,6 +8,7 @@ import database
 from textblob import TextBlob
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 # Command class
 
 class Command:
