@@ -7,7 +7,8 @@ import userInput
 import database
 from textblob import TextBlob
 import nltk
-nltk.download('punkt')
+
+#nltk.download('punkt')
 # Command class
 
 class Command:
@@ -54,15 +55,14 @@ def main():
                         
 
 
-        # Run a command, if the comamnd is not found, analyse the user input
-        if (RunCommand(user_input, user_input) == False):
-            #userInput.HandleInput(user_input)
-            analyse.sentiment(user_input)
+
 
         # Run a command, if the command is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False) and (blob.words != []):
-           userInput.HandleInput(user_input)
+           #userInput.HandleInput(user_input)
+           #analyse.sentiment(user_input)
            # print(user_input)
+           analyse.wordnet(user_input)
 
 
 # run the main function
