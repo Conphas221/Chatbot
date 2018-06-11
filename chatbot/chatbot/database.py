@@ -97,29 +97,20 @@ def GetAllMessagesWith(keyword=None):
     session = DBSession()
     messages = session.query(Message).all()
     ret = []
-    retcheck = []
     if not keyword == None:
         for i in range(0, len(messages)):
             m = messages[i]
-            #print(m.sender + ": " + m.content)
-            words = m.content.lower().split(" ")
-            not_matched = False
-            for j in range(0, len(keyword)):
-                if keyword[j] not in words:
-                    not_matched = True
-            if not not_matched:
-                if not m.content in retcheck:
-                    ret.append(m)
-                    retcheck.append(m.content)
-
-
+            if(m.keyword == keyword):
+                ret.append(m)
         if ret == []:
-            print("No people with relevant experience found, please consult the documentation or a manager")
+            return "No people with relevant experience found, please consult the documentation or a manager"
         return ret
     return messages
 
 def GetTopAuthorWith(keyword):
     messages = GetAllMessagesWith(keyword)
+    if messages == "No people with relevant experience found, please consult the documentation or a manager":
+        return messages
     best = messages[0]
     for i in range(1,len(messages)):
         m = messages[i]
@@ -128,4 +119,4 @@ def GetTopAuthorWith(keyword):
         else:
             if(m.recommendation > best.recommendation):
                 best = m
-    return best.author
+    return best.sender
