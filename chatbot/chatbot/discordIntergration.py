@@ -1,5 +1,6 @@
 import discord
 import userInput
+import database
 
 client = discord.Client()
 
@@ -10,12 +11,14 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    print("Message received")
+    print("Message received from {0}".format(message.author.name))
 
     resultString = "Something went wrong while processing your message."
 
     try:
         keywords = userInput.HandleInputInternal(message.content)
+        if(len(keywords) > 0):
+            database.addMessageToDB(message, keywords)
         resultString = "Found the following keywords in your message: "
 
         for keyword in keywords:
@@ -39,5 +42,5 @@ def main():
     print("Starting discord bot...")
 
     # run discord bot
-    TOKEN = 'NDQ2NjU0NzEzMDg2MDgzMDcz.Dd8LRg.jQfWV8UclPrVqBwBR19KS9xeugM'
+    TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI'
     client.run(TOKEN)

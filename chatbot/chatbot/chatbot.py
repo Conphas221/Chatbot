@@ -5,8 +5,11 @@ import analyse
 import discordIntergration
 import userInput
 import database
-
+from textblob import TextBlob
+import nltk
+nltk.download('punkt')
 # Command class
+
 class Command:
     def __init__(self, command, callback):
         self.command = command
@@ -37,19 +40,35 @@ def RunCommand(command, args):
 
 # Define main() function
 def main():
-    # Register comamnds
+    # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
+    RegisterCommand("-k", lambda args : None)
+    RegisterCommand("-s", lambda args : None)
+    RegisterCommand("-d", lambda args : None)
     RegisterCommand("quit", lambda args : exit())
+
+    print("use the -k command to add entries to the keyword list"+"\n"+"use the -s command to print all keywords"+"\n"+"use the -d command to delete keywords from the list"+"\nuse the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 
     # Command loop
     while True:
         # Obtain the user input from the command line
         user_input = input().lower()
+        blob = TextBlob(user_input)
+                        
 
+<<<<<<< HEAD
         # Run a command, if the comamnd is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False):
             #userInput.HandleInput(user_input)
             analyse.sentiment(user_input)
+=======
+        # Run a command, if the command is not found, analyse the user input
+        if (RunCommand(user_input, user_input) == False) and (blob.words != []):
+           userInput.HandleInput(user_input)
+           # print(user_input)
+>>>>>>> 3728052f58e836789e2a1ba4832906f62210e977
 
 # run the main function
 main()
+
+

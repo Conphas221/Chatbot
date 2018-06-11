@@ -102,5 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
 .vs/Chatbot/v15/.suo
 .vs/slnx.sqlite
+=======
+chatbot/.vs/chatbot/v15/.suo
+>>>>>>> 3728052f58e836789e2a1ba4832906f62210e977
