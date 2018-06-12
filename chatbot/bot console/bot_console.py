@@ -1,6 +1,7 @@
 import _datetime as datetime
-from .chatbot import *
-
+import database
+import os
+import os.path as path
 import sqlalchemy
 from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
@@ -11,10 +12,20 @@ from sqlalchemy.types import Date
 from sqlalchemy.sql.expression import func
 from sqlalchemy import update
 Base = declarative_base()
-engine = create_engine('sqlite:///D:/Users/Van Ek/Documents/studie/project 7-8/github/Chatbot/chatbot/chatbot/messages.db')
+
+
+chatbot_dir =  path.abspath(path.join(__file__ ,"../../chatbot"))
+db_dir = os.path.join(chatbot_dir, 'messages.db')
+
+
+engine = create_engine(''.join(['sqlite:///', db_dir]))
+
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 print("start")
+
+
+
 
 class Message(Base):
     __tablename__ = 'Message'
@@ -62,7 +73,7 @@ def GetAllMessagesWith(keyword=None):
 
 while True:
     date = datetime.datetime.now()
-    if date.hour == 14 and date.minute == 32 and date.second == 0:
-        messages = database.GetAllMessagesWith()
+    if date.hour == 16 and date.minute == 8 and date.second ==0:
+        messages = GetAllMessagesWith()
         for i in range(0,len(messages)):
-            analyse.updateScoreTime(messages[i], date)
+            updateScoreTime(messages[i], date)
