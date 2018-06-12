@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b2a4b7aa-afe7-41a5-a191-06d2aab3cb63</ProjectGuid>
+    <ProjectGuid>4ba21708-9145-4a34-9fab-a656fc809a6e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>chatbot.py</StartupFile>
+    <StartupFile>bot_console.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>chatbot</Name>
-    <RootNamespace>chatbot</RootNamespace>
+    <Name>bot console</Name>
+    <RootNamespace>bot console</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,24 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="chatbot.py" />
-    <Compile Include="analyse.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="database.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="discordIntergration.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="userInput.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="bot_console.py" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bot console\bot console.pyproj">
-      <Name>bot console</Name>
-      <Project>{4ba21708-9145-4a34-9fab-a656fc809a6e}</Project>
+    <ProjectReference Include="..\chatbot\chatbot.pyproj">
+      <Name>chatbot</Name>
+      <Project>{b2a4b7aa-afe7-41a5-a191-06d2aab3cb63}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

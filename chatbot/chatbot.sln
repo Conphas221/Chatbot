@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "chatbot", "chatbot\chatbot.pyproj", "{B2A4B7AA-AFE7-41A5-A191-06D2AAB3CB63}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "bot console", "bot console\bot console.pyproj", "{4BA21708-9145-4A34-9FAB-A656FC809A6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B2A4B7AA-AFE7-41A5-A191-06D2AAB3CB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2A4B7AA-AFE7-41A5-A191-06D2AAB3CB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA21708-9145-4A34-9FAB-A656FC809A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA21708-9145-4A34-9FAB-A656FC809A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
