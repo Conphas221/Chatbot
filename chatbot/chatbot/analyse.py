@@ -7,6 +7,7 @@ from textblob.wordnet import *
 
 import database
 #from nltk.corpus import *
+#print((os.path.join('Project2/spelregels.bmp')))
 
 #nltk.download()#for de download van nltk corpora
 
@@ -45,7 +46,10 @@ def wordnet(text):
     #print(syns[0].lemmas()[0].name())
     #Word("octopus").definition
     #print(syns[0].definition())
-    print(syns.detect_language())
+    try:
+        print(syns.detect_language())
+    except:
+         print("Text must contain at least 3 characters in order to detect language.")
 
 def updateScoreMessage(message, Message):
     currentscore = Message.recommendation
