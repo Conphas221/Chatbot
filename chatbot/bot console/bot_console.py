@@ -1,5 +1,4 @@
 import _datetime as datetime
-from .chatbot import *
 
 import sqlalchemy
 from sqlalchemy import Column, ForeignKey, Integer, String, Float
@@ -62,7 +61,7 @@ def GetAllMessagesWith(keyword=None):
 
 while True:
     date = datetime.datetime.now()
-    if date.hour == 14 and date.minute == 32 and date.second == 0:
-        messages = database.GetAllMessagesWith()
+    if date.hour == 16 and date.minute == 18 and date.second == 0:
+        messages = GetAllMessagesWith()
         for i in range(0,len(messages)):
-            analyse.updateScoreTime(messages[i], date)
+            updateScoreTime(messages[i], date)
