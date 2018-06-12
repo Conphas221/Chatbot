@@ -5,8 +5,7 @@
     <ProjectGuid>4ba21708-9145-4a34-9fab-a656fc809a6e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>bot_console.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>..\chatbot</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>bot console</Name>
