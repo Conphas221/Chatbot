@@ -14,18 +14,27 @@ async def on_message(message):
     print("Message received from {0}".format(message.author.name))
 
     resultString = "Something went wrong while processing your message."
+    if not message.channel.is_private:
+        try:
+            keywords = userInput.HandleInputInternal(message.content)
+            if(len(keywords) > 0):
+                database.addMessageToDB(message, keywords)
+            resultString = "Found the following keywords in your message: "
 
-    try:
-        keywords = userInput.HandleInputInternal(message.content)
-        if(len(keywords) > 0):
-            database.addMessageToDB(message, keywords)
-        resultString = "Found the following keywords in your message: "
-
-        for keyword in keywords:
-            resultString += keyword.spot + ", "
-    except:
-        None
-
+            for keyword in keywords:
+                resultString += keyword.spot + ", "
+        except:
+            None
+    else:
+        try:
+            keywords = userInput.HandleInputInternal(message.content)
+            resultString = "These are the keywords I found in your message and a person that might be able to help you: "
+            for keyword in keywords:
+                title = keyword.title
+                author = database.GetTopAuthorWith(title, message.author.name)
+                resultString = resultString + "\n" + keyword.title + ": " + author
+        except:
+            None
     await client.send_message(message.channel, resultString)
 
 #function that triggers on the event on_ready, to tell the user that discord is live

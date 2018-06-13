@@ -106,16 +106,23 @@ def GetAllMessagesWith(keyword=None):
         return ret
     return messages
 
-def GetTopAuthorWith(keyword):
+def GetTopAuthorWith(keyword, author):
     messages = GetAllMessagesWith(keyword)
     if messages == "No people with relevant experience found, please consult the documentation or a manager":
         return messages
     best = messages[0]
-    for i in range(1,len(messages)):
-        m = messages[i]
-        if i == 0:
-            best = m
-        else:
+    nextBest = "No people with relevant experience found, please consult the documentation or a manager"
+    if len(messages) > 1:
+        nextBest = messages[1]
+        for i in range(1,len(messages)):
+            m = messages[i]
             if(m.recommendation > best.recommendation):
+                nextBest = best
                 best = m
-    return best.sender
+    if best.sender == author:
+        try:
+            return nextBest.sender
+        except:
+            return nextBest
+    else:
+        return best.sender
