@@ -7,7 +7,6 @@ from textblob.wordnet import *
 
 import database
 #from nltk.corpus import *
-#print((os.path.join('Project2/spelregels.bmp')))
 
 #nltk.download()#for de download van nltk corpora
 
@@ -19,9 +18,9 @@ def IsQuestion(text):
         return not question
     for i in range(0,len(text.words)): #compares every word in the given text with the words in the questionmarker array
         for j in range(0,len(questionmarker)):
-            if text.words[i] == questionmarker[j]:# or ("?" in text) or (", right" in text):
-                return not question #= True
-                #break
+            if text.words[i] == questionmarker[j]:
+                return not question 
+                
     return question
 
 
