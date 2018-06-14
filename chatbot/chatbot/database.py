@@ -70,7 +70,6 @@ def addMessageToDB(message, keywords):
 #called when a message is received to further process it.
 def ReceivedMessage(message):
     print("received a message from " + message.author.name)
-    keywords = load_keywords()
     words = message.content.lower().split(" ")
     for i in range(0, len(words)):
         if words[i] in keywords:       #if the message contains a keyword add to db
