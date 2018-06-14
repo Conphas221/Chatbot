@@ -76,7 +76,7 @@ def ReceivedMessage(message):
         if words[i] in keywords:       #if the message contains a keyword add to db
             addMessageToDB(message)
             print("message saved")
-            break
+            break 
 
 def GetAllAuthorsWith(keyword=None):
     messages = GetAllMessagesWith(keyword)

@@ -1,0 +1,30 @@
+{
+	"lang": "en",
+	"description": "extra spots for project 7/8",
+	"list": [
+	{
+		"spot": "C#",
+		"topic": "https://en.wikipedia.org/wiki/C%E2%99%AF"
+	},
+	{
+		"spot": "TypeScript",
+		"topic": "https://en.wikipedia.org/wiki/TypeScript"
+	},
+	{
+		"spot": "JavaScript)",
+		"topic": "https://en.wikipedia.org/wiki/JavaScript"
+	},
+	{
+		"spot": "Lua (programming language)",
+		"topic": "https://en.wikipedia.org/wiki/Lua_(programming_language)"
+	},
+	{
+		"spot": "Type_signature#Method_signature",
+		"topic": "https://en.wikipedia.org/wiki/Type_signature#Method_signature"
+	},
+	{
+		"spot": "Bash",
+		"topic": "https://nl.wikipedia.org/wiki/Bash"
+	}
+	]
+}
