@@ -4,7 +4,7 @@ import database
 from chatterbot import ChatBot
 
 bot = ChatBot("project7-8 bot", trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
-bot.train("chatterbot.corpus.english")
+#bot.train("chatterbot.corpus.english")
 client = discord.Client()
 
 #function that triggers on the event on_message, telling the bot to read the message
