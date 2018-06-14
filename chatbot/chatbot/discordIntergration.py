@@ -1,7 +1,10 @@
 import discord
 import userInput
 import database
+from chatterbot import ChatBot
 
+bot = ChatBot("project7-8 bot", trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
+bot.train("chatterbot.corpus.english")
 client = discord.Client()
 
 #function that triggers on the event on_message, telling the bot to read the message
@@ -35,6 +38,8 @@ async def on_message(message):
                 resultString = resultString + "\n" + keyword.title + ": " + author
         except:
             None
+        if resultString == "These are the keywords I found in your message and a person that might be able to help you: ":
+            resultString = bot.get_response(message.content)
     await client.send_message(message.channel, resultString)
 
 #function that triggers on the event on_ready, to tell the user that discord is live
