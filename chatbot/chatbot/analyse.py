@@ -62,3 +62,27 @@ def updateScoreMessage(message, Message):
     if currentscore > 100.0:
         currentscore = 100.0
     return round(currentscore, 3)
+
+def updateScoreFeedback(username, keyword, rating):
+    dbentry = None
+    try:
+        messages = database.GetAllMessagesWith(keyword)
+        for m in messages:
+            if m.sender == username:
+                dbentry = m
+    except:
+        None
+    currentscore = dbentry.recommendation
+    newScore = currentscore
+    scoreModifier = 1 - (currentscore/100)
+    addscore = rating - 5.5
+    newScore += addscore * scoreModifier
+    if currentscore > 100.0:
+        currentscore = 100.0
+    try:
+        session = database.getDBSession()
+        session.query(Message).filter_by(id=dbentry.id).update({"recommendation":newScore})
+        session.commit()
+        session.close()
+    except:
+        None

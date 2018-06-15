@@ -1,6 +1,7 @@
 import discord
 import userInput
 import database
+import analyse
 from chatterbot import ChatBot
 
 bot = ChatBot("project7-8 bot", trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
@@ -16,7 +17,8 @@ async def on_message(message):
 
     print("Message received from {0}".format(message.author.name))
 
-    resultString = "Something went wrong while processing your message."
+    resultString = ""
+    feedbackString = ""
     if not message.channel.is_private:
         try:
             keywords = userInput.HandleInputInternal(message.content)
@@ -27,20 +29,52 @@ async def on_message(message):
             for keyword in keywords:
                 resultString += keyword.spot + ", "
         except:
-            None
+            resultString = "Something went wrong while processing your message."
     else:
-        try:
-            keywords = userInput.HandleInputInternal(message.content)
-            resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-            for keyword in keywords:
-                title = keyword.title
-                author = database.GetTopAuthorWith(title, message.author.name)
-                resultString = resultString + "\n" + keyword.title + ": " + author
-        except:
-            None
-        if resultString == "These are the keywords I found in your message and a person that might be able to help you: ":
-            resultString = bot.get_response(message.content)
-    await client.send_message(message.channel, resultString)
+        if message.content.startswith("!Feedback"):
+            j = 0
+            username = ""
+            keyword = ""
+            rating = ""
+            userDone = False
+            keywordDone = False
+            for i in range(0, len(message.content)):
+                if message.content[i] == ':':
+                    j = i + 2
+                if i >= j and not userDone and not j == 0:
+                    if not message.content[i] == ',':
+                        username += message.content[i]
+                    else:
+                        userDone = True
+                        j = 0
+                elif i >= j and not keywordDone and not j == 0:
+                    if not message.content[i] == ',':
+                        keyword += message.content[i]
+                    else:
+                        keywordDone = True
+                        j = 0
+                elif i >= j and not j == 0:
+                    rating += message.content[i]
+            floatrating = float(rating)
+            analyse.updateScoreFeedback(username, keyword, floatrating)
+            resultString = 'Thank you for your feedback on user {username}'.format(username = username)
+        else:
+            try:
+                keywords = userInput.HandleInputInternal(message.content)
+                resultString = "These are the keywords I found in your message and a person that might be able to help you: "
+                for keyword in keywords:
+                    title = keyword.title
+                    author = database.GetTopAuthorWith(title, message.author.name)
+                    resultString = resultString + "\n" + keyword.title + ": " + author
+            except:
+                None
+            if resultString == "These are the keywords I found in your message and a person that might be able to help you: ":
+                resultString = bot.get_response(message.content)
+            feedbackString = "could you please give me feedback on the help the suggested person(s) gave you?\nplease format your message like this:\n!Feedback User: <username>, Keyword: <keyword>, Rating: <rating from 1.0 - 10.0>"
+    if not resultString == "":
+        await client.send_message(message.channel, resultString)
+    if not feedbackString == "":
+        await client.send_message(message.channel, feedbackString)
 
 #function that triggers on the event on_ready, to tell the user that discord is live
 @client.event
