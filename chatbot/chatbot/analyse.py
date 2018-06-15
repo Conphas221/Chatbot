@@ -3,7 +3,7 @@ from textblob import TextBlob
 import nltk
 import discordIntergration
 from textblob import Word
-from textblob.wordnet import *
+#from textblob.wordnet import *
 
 import database
 #from nltk.corpus import *
