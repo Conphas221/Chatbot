@@ -73,16 +73,15 @@ def updateScoreFeedback(username, keyword, rating):
     except:
         None
     currentscore = dbentry.recommendation
-    newScore = currentscore
     scoreModifier = 1 - (currentscore/100)
     addscore = rating - 5.5
-    newScore += addscore * scoreModifier
+    currentscore += addscore * scoreModifier
     if currentscore > 100.0:
         currentscore = 100.0
-    try:
-        session = database.getDBSession()
-        session.query(Message).filter_by(id=dbentry.id).update({"recommendation":newScore})
-        session.commit()
-        session.close()
-    except:
-        None
+    #try:
+    session = database.getDBSession()
+    session.query(database.Message).filter_by(id=dbentry.id).update({"recommendation":currentscore})
+    session.commit()
+    session.close()
+    #except:
+    #    None
