@@ -70,7 +70,7 @@ async def on_message(message):
                 else:
                     resultString = ret
             except:
-                resultString = "Please supply a numeric rating"
+                resultString = "You did something wrong!"
         else:
             try:
                 keywords = userInput.HandleInputInternal(message.content)
@@ -84,7 +84,7 @@ async def on_message(message):
             if resultString == "These are the keywords I found in your message and a person that might be able to help you: ":
                 resultString = bot.get_response(message.content)
             else:
-                feedbackString = "Could You Please Give Me Feedback On The Help The Suggested Person(s) Gave You?\nPlease format your message like this:\n!Feedback User: <username>, Keyword: <keyword>, Rating: <rating from 1.0 - 10.0>"
+                feedbackString = "Could you please give me feedback on the help the suggested person(s) gave you?\nPlease format your message like this:\n!Feedback User: <username>, Keyword: <keyword>, Rating: <rating from 1.0 - 10.0>"
     if not resultString == "":
         await client.send_message(message.channel, resultString)
         print(resultString)
