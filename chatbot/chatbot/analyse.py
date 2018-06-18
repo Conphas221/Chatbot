@@ -3,6 +3,7 @@ from textblob import TextBlob
 import nltk
 import discordIntergration
 from textblob import Word
+import userInput
 #from textblob.wordnet import *
 
 import database
@@ -71,17 +72,33 @@ def updateScoreFeedback(username, keyword, rating):
             if m.sender == username:
                 dbentry = m
     except:
-        None
+        try:
+            keywords = AnalyseText(keyword)
+            messages = database.GetAllMessagesWith(keywords[0].title)
+            for m in messages:
+                if m.sender == username:
+                    dbentry = m
+        except:
+            try:
+                keywords = wordnet(keyword)
+                messages = database.GetAllMessagesWith(keywords[0].title)
+                for m in messages:
+                    if m.sender == username:
+                        dbentry = m
+            except:
+                return "The combination of User {0} and Keyword {1} could not be found".format(username, keyword)
+    if dbentry==None:
+        return "The combination of User {0} and Keyword {1} could not be found".format(username, keyword)
     currentscore = dbentry.recommendation
     scoreModifier = 1 - (currentscore/100)
     addscore = rating - 5.5
     currentscore += addscore * scoreModifier
     if currentscore > 100.0:
         currentscore = 100.0
-    #try:
-    session = database.getDBSession()
-    session.query(database.Message).filter_by(id=dbentry.id).update({"recommendation":currentscore})
-    session.commit()
-    session.close()
-    #except:
-    #    None
+    try:
+        session = database.getDBSession()
+        session.query(database.Message).filter_by(id=dbentry.id).update({"recommendation":currentscore})
+        session.commit()
+        session.close()
+    except:
+        None
