@@ -148,5 +148,5 @@ def main():
     file.close()
 
     # run discord bot
-    TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI'
+    TOKEN = 'NDU4NjM1OTUwNDI4NTIwNDcy.Dgqhlw.KcYdamEg9IeHrVVqyf5DhjsUc2g'
     client.run(TOKEN)
