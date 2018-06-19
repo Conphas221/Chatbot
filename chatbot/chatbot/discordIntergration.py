@@ -20,17 +20,14 @@ async def on_message(message):
 
     resultString = ""
     feedbackString = ""
-    if not message.channel.is_private:
+    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content):
         try:
             keywords = userInput.HandleInputInternal(message.content)
             if(len(keywords) > 0):
                 database.addMessageToDB(message, keywords)
-            resultString = "Found the following keywords in your message: "
-
-            for keyword in keywords:
-                resultString += keyword.spot + ", "
+                console.writeline("Found keyword(s) in last message.")
         except:
-            resultString = "Something went wrong while processing your message."
+            resultString = ""
     else:
         if message.content.startswith("!Feedback"):
             j = 0
@@ -82,7 +79,10 @@ async def on_message(message):
             except:
                 None
             if resultString == "These are the keywords I found in your message and a person that might be able to help you: ":
-                resultString = bot.get_response(message.content)
+                if not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content):
+                    resultString = bot.get_response(message.content)
+                else:
+                    resultString = "I couldn't find any keywords in your message or there is no information on the keywords."
             else:
                 feedbackString = "Could you please give me feedback on the help the suggested person(s) gave you?\nPlease format your message like this:\n!Feedback User: <username>, Keyword: <keyword>, Rating: <rating from 1.0 - 10.0>"
     if not resultString == "":
