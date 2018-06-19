@@ -1,0 +1,78 @@
+[
+    {
+        "input": "I could use some help with a bug I am currently facing",
+        "output": "True"
+    },
+    {
+        "input": "I could use some assistance with a bug I am currently facing",
+        "output": "True"
+    },
+    {
+        "input": "Could you provide me some support to fix this issue?",
+        "output": "True"
+    },
+    {
+        "input": "I need some help with a bug I have in C++",
+        "output": "True"
+    },
+    {
+        "input": "I need some assistance with a bug in my Rust code",
+        "output": "True"
+    },
+    {
+        "input": "Do you need help?",
+        "output": "False"
+    },
+    {
+        "input": "Do you need some help with your issue?",
+        "output": "False"
+    },
+    {
+        "input": "Do you need assistance?",
+        "output": "False"
+    },
+    {
+        "input": "Do you need support?",
+        "output": "False"
+    },
+    {
+        "input": "Do I need to provide support to you regarding the issue?",
+        "output": "False"
+    },
+    {
+        "input": "Do I need to assist you to fix the issue?",
+        "output": "False"
+    },
+    {
+        "input": "Can I get some help?",
+        "output": "True"
+    },
+    {
+        "input": "Do you need some help?",
+        "output": "False"
+    },
+    {
+        "input": "Can I get some assistance to fix this issue?",
+        "output": "True"
+    },
+    {
+        "input": "Do you need some assistance?",
+        "output": "False"
+    },
+    {
+        "input": "Can I get some support on this issue?",
+        "output": "True"
+    },
+    {
+        "input": "Do you need some support?",
+        "output": "False"
+    },
+    {
+        "input": "Can I get some support on this bug?",
+        "output": "True"
+    },
+    {
+        "input": "Do you need some support?",
+        "output": "False"
+    }
+]

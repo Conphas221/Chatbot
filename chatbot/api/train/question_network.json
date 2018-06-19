@@ -1,0 +1,249 @@
+[
+    {
+        "input": "How big is the player base of IW4x?",
+        "output": "Question"
+    },
+    {
+        "input": "So what is a good website to find scripts for the iw4x servers?",
+        "output": "Question"
+    },
+    {
+        "input": "So what is a good website to find scripts for the iw4x servers?",
+        "output": "Question"
+    },
+    {
+        "input": "Did you download Zombies?",
+        "output": "Question"
+    },
+    {
+        "input": "Alright I'll try that after this is done verifying.",
+        "output": "Statement"
+    },
+    {
+        "input": "Do I need to buy the DLCs on Steam to play them on T6?",
+        "output": "Question"
+    },
+    {
+        "input": "Thanks a lot man!",
+        "output": "Statement"
+    },
+    {
+        "input": "Can someone help me stop the map rotation on my dedicated server?",
+        "output": "Statement"
+    },
+    {
+        "input": "He has a clean link, it's up to him now.",
+        "output": "Statement"
+    },
+    {
+        "input": "Are you trying to make classes?",
+        "output": "Statement"
+    },
+    {
+        "input": "Have you checked if your system time is correct?",
+        "output": "Question"
+    },
+    {
+        "input": "When did you create the account?",
+        "output": "Question"
+    },
+    {
+        "input": "What country are you from?",
+        "output": "Statement"
+    },
+    {
+        "input": "I am still getting this problem even though my account is verified.",
+        "output": "Statement"
+    },
+    {
+        "input": "What do I do now?",
+        "output": "Question"
+    },
+    {
+        "input": "Can i get some help?",
+        "output": "Question"
+    },
+    {
+        "input": "Send screenshot your game folder.",
+        "output": "Statement"
+    },
+    {
+        "input": "Can you send a screenshot of your game folder.",
+        "output": "Question"
+    },
+    {
+        "input": "I will try, Thanks!",
+        "output": "Statement"
+    },
+    {
+        "input": "Restart your computer to resolve the issue.",
+        "output": "Statement"
+    },
+    {
+        "input": "How are you?",
+        "output": "Question"
+    },
+    {
+        "input": "I am doing great!",
+        "output": "Statement"
+    },
+    {
+        "input": "What about you?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you actually have the DLC?",
+        "output": "Question"
+    },
+    {
+        "input": "Did you start the game through PU.exe?",
+        "output": "Question"
+    },
+    {
+        "input": "There is a bug in the current version that crashes servers after a few hours.",
+        "output": "Statement"
+    },
+    {
+        "input": "The game is written in C++.",
+        "output": "Statement"
+    },
+    {
+        "input":
+            "Writing a list of random sentences is harder than I initially thought it would be.",
+        "output": "Statement"
+    },
+    {
+        "input": "She folded her handkerchief neatly.",
+        "output": "Statement"
+    },
+    {
+        "input": "I think I will buy the red car, or I will lease the blue one.",
+        "output": "Statement"
+    },
+    {
+        "input": "I want to buy a onesie… but know it won’t suit me.",
+        "output": "Statement"
+    },
+    {
+        "input": "Please wait outside of the house.",
+        "output": "Statement"
+    },
+    {
+        "input": "Let me help you with your baggage.",
+        "output": "Statement"
+    },
+    {
+        "input":
+            "This is the last random sentence I will be writing and I am going to stop mid-sent",
+        "output": "Statement"
+    },
+    {
+        "input": "She always speaks to him in a loud voice.",
+        "output": "Statement"
+    },
+    {
+        "input": "If I don’t like something, I’ll stay away from it.",
+        "output": "Statement"
+    },
+    {
+        "input": "There is a bug in the current version that crashes servers after a few hours.",
+        "output": "Statement"
+    },
+    {
+        "input": "I am never at home on Sundays.",
+        "output": "Statement"
+    },
+    {
+        "input": "We have a lot of rain in June.",
+        "output": "Statement"
+    },
+    {
+        "input": "Sixty-Four comes asking for bread.",
+        "output": "Statement"
+    },
+    {
+        "input":
+            "Last Friday in three week’s time I saw a spotted striped blue worm shake hands with a legless lizard.",
+        "output": "Statement"
+    },
+    {
+        "input": "The lake is a long way from here.",
+        "output": "Statement"
+    },
+    {
+        "input": "I will never be this young again. Ever. Oh damn… I just got older.",
+        "output": "Statement"
+    },
+    {
+        "input": "He ran out of money, so he had to stop playing poker.",
+        "output": "Statement"
+    },
+    {
+        "input": "She wrote him a long letter, but he didn't read it.",
+        "output": "Statement"
+    },
+    {
+        "input": "The stranger officiates the meal.",
+        "output": "Statement"
+    },
+    {
+        "input": "She was too short to see over the fence.",
+        "output": "Statement"
+    },
+    {
+        "input": "Do you need help?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need some help with your issue?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need assistance?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need support?",
+        "output": "Question"
+    },
+    {
+        "input": "Do I need to provide support to you regarding the issue?",
+        "output": "Question"
+    },
+    {
+        "input": "Do I need to assist you to fix the issue?",
+        "output": "Question"
+    },
+    {
+        "input": "Can I get some help?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need some help?",
+        "output": "Question"
+    },
+    {
+        "input": "Can I get some assistance to fix this issue?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need some assistance?",
+        "output": "Question"
+    },
+    {
+        "input": "Can I get some support on this issue?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need some support?",
+        "output": "Question"
+    },
+    {
+        "input": "Can I get some support on this bug?",
+        "output": "Question"
+    },
+    {
+        "input": "Do you need some support?",
+        "output": "Question"
+    }
+]
