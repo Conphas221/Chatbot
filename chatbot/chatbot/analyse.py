@@ -15,7 +15,7 @@ import database
 def IsQuestion(text):
     question = False
     questionmarker = ["?","how","why","what","where","who"] #array of question indicators
-    if ("?" in text) or (", right" in text): #checks for two specific question indicators that the loop has trouble with
+    if ("?" in text): #checks for two specific question indicators that the loop has trouble with
         return not question
     for i in range(0,len(text.words)): #compares every word in the given text with the words in the questionmarker array
         for j in range(0,len(questionmarker)):
