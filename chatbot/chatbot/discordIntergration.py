@@ -30,7 +30,7 @@ async def on_message(message):
 
     resultString = ""
     feedbackString = ""
-    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content):
+    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):
         try:
             keywords = userInput.HandleInputInternal(message.content)
             if(len(keywords) > 0):
@@ -91,7 +91,7 @@ async def on_message(message):
                         resultString = resultString + "\n" + keyword.title + ": " + author
                 except:
                     resultString = ""
-            elif "<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content:
+            elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:
                 try:
                     keywords = userInput.HandleInputInternal(message.content)
                     resultString = "These are the keywords I found in your message and a person that might be able to help you: "
@@ -104,7 +104,7 @@ async def on_message(message):
             else:
                 resultString = bot.get_response(message.content)
             if resultString == "These are the keywords I found in your message and a person that might be able to help you: " or resultString == "":
-                if not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content):
+                if not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):
                     resultString = bot.get_response(message.content)
                 else:
                     resultString = "I couldn't find any keywords in your message or there is no information on the keywords."
