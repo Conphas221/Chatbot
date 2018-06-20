@@ -8,6 +8,8 @@ import database
 from textblob import TextBlob
 import nltk
 import requests
+from requests.adapters import HTTPAdapter
+import json
 
 #nltk.download('punkt')
 #nltk.download('wordnet')
@@ -43,15 +45,21 @@ def RunCommand(command, args):
 
 
 def Requests():
-    #r = requests.get('https://api.github.com/events')
-    payload = (('key1', 'value1'), ('key1', 'value2'))
-    r = requests.post('http://httpbin.org/post', data=payload)
+
+    url = "http://localhost:5000/analyse"
+
+   # payload1 = {'data': 'I need assistance with a compile error in c#'}
+    r = requests.post(url, json={"data": 'Do you need some help with your issue?'})
+    print(r)
+    print(r.status_code)
+
+ 
 
 
-    try:
-        print(r.json())
-    except:
-        print("JSON decoding failed")
+
+
+
+
     
 
 

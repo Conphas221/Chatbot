@@ -51,12 +51,13 @@ let main = () => {
             let sentence = req.body.data;
 
             // handle statement
-            let response = handleStatement(statement);
+            let response = handleStatement(sentence);
 
             // send response
             res.send(response);
         } catch (err) {
             res.sendStatus(400);
+            console.log(err);
         }
     });
     app.listen(5000, () => console.log('HTTP API running on port 5000'));
