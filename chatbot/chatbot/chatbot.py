@@ -1,4 +1,3 @@
-#import discord
 import time
 import _datetime as datetime
 import analyse
@@ -10,10 +9,7 @@ import nltk
 import requests
 from requests.adapters import HTTPAdapter
 import json
-import os
 import os.path as path
-
-
 #nltk.download('punkt')
 #nltk.download('wordnet')
 # Command class
@@ -50,21 +46,12 @@ def RunCommand(command, args):
 def APIrequester(message):
 
     url = "http://localhost:5000/analyse"
-
-   # payload1 = {'data': 'I need assistance with a compile error in c#'}
     r = requests.post(url, json={"data": message})
     print(r)
-    print(r.status_code)
-
+    
  
 
-def startapi():
-    startapi_dir =  path.abspath(path.join(__file__ ,"../../api"))
-    startapi = os.path.join(startapi_dir, "startapi.bat")
-    import subprocess
-    from subprocess import Popen
-    subprocess.run("start startapi.lnk", shell=True)
-    
+
     
    
 

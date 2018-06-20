@@ -9,7 +9,7 @@ import userInput
 import database
 #from nltk.corpus import *
 
-#nltk.download()#for de download van nltk corpora
+#nltk.download()#voor de download van nltk corpora
 
 #needs to be given a textblob text
 def IsQuestion(text):
