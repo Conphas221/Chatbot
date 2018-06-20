@@ -44,12 +44,12 @@ def RunCommand(command, args):
     return False
 
 
-def Requests():
+def APIrequester(message):
 
     url = "http://localhost:5000/analyse"
 
    # payload1 = {'data': 'I need assistance with a compile error in c#'}
-    r = requests.post(url, json={"data": 'Do you need some help with your issue?'})
+    r = requests.post(url, json={"data": message})
     print(r)
     print(r.status_code)
 
@@ -83,11 +83,12 @@ def main():
         # Obtain the user input from the command line
         user_input = input().lower()
         blob = TextBlob(user_input) #creates a textblob variable of the input
-        #print(analyse.IsQuestion(blob))
+
 
         # Run a command, if the command is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False) and (blob.words != []): #makes sure HandleInput is not passed null or empty
-           userInput.HandleInput(user_input)
+           #userInput.HandleInput(user_input)
+           APIrequester(user_input)
            # print(user_input)
            #analyse.wordnet(user_input)
 
