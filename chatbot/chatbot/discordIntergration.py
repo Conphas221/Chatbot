@@ -72,7 +72,7 @@ async def on_message(message):
                 elif floatrating < 1.0:
                     FloatingPointError = 1.0
                 ret = None
-                ret = analyse.updateScoreFeedback(username.lower(), keyword, floatrating)
+                ret = analyse.updateScoreFeedback(username.lower(), keyword.lower(), floatrating)
                 if ret == None:
                     resultString = 'Thank you for your feedback on user {username}'.format(username = username)
                 else:

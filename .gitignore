@@ -171,3 +171,5 @@ typings/
 
 # next.js build output
 .next
+*.txt
+chatbot/.vs/chatbot/v15/.suo
