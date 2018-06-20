@@ -7,6 +7,7 @@ import userInput
 import database
 from textblob import TextBlob
 import nltk
+import requests
 
 #nltk.download('punkt')
 #nltk.download('wordnet')
@@ -40,11 +41,27 @@ def RunCommand(command, args):
 
     return False
 
+
+def Requests():
+    #r = requests.get('https://api.github.com/events')
+    payload = (('key1', 'value1'), ('key1', 'value2'))
+    r = requests.post('http://httpbin.org/post', data=payload)
+
+
+    try:
+        print(r.json())
+    except:
+        print("JSON decoding failed")
+    
+
+
 # Define main() function
 def main():
     # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
     RegisterCommand("quit", lambda args : exit())
+    RegisterCommand("-r", lambda args : Requests())
+
 
     print("use the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 
