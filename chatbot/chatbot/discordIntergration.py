@@ -4,6 +4,7 @@ import database
 import analyse
 from chatterbot import ChatBot
 import _datetime as datetime
+from database import addLog
 
 currentlog = ""
 
@@ -26,7 +27,7 @@ async def on_message(message):
 
     print("Message received from {0}".format(message.author.name))
     print(message.content)
-    log(str(message.author.name + ": " + message.content))
+    addLog(str(message.author.name), str(message.content))
 
     resultString = ""
     feedbackString = ""
@@ -36,7 +37,7 @@ async def on_message(message):
             if(len(keywords) > 0):
                 database.addMessageToDB(message, keywords)
                 console.writeline("Found keyword(s) in last message.")
-                log("Bot: Found keyword(s) in last message.")
+                addLog("Bot", "Found keyword(s) in last message.")
         except:
             resultString = ""
     else:
@@ -87,7 +88,7 @@ async def on_message(message):
                     resultString = ret
             except:
                 resultString = "You did something wrong!"
-                log("Bot: You did something wrong!")
+                addLog("Bot", "You did something wrong!")
         else:
             if message.content.startswith("!"):
                 try:
@@ -121,12 +122,12 @@ async def on_message(message):
     if not resultString == "":
         await client.send_message(message.channel, resultString)
         print(resultString)
-        log("Bot: " + str(resultString))
+        addLog("Bot", str(resultString))
         resultString = None
     if not feedbackString == "":
         await client.send_message(message.channel, feedbackString)
         print(feedbackString)
-        log("Bot: " + str(feedbackString))
+        addLog("Bot", str(feedbackString))
         feedbackString = None
 
 #function that triggers on the event on_ready, to tell the user that discord is live

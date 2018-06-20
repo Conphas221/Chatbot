@@ -30,6 +30,20 @@ class Message(Base):
     lastDate = Column(Date)
     recommendation = Column(Float)
 
+class Log(Base):
+    __tablename__ = 'Log'
+    id = Column(Integer, primary_key=True)
+    sender = Column(String(50))
+    message = Column(String(500))
+
+def addLog(sender, message):
+    session = DBSession()
+    id = session.query(func.max(Log.id)).one()[0] + 1
+    l = Log(id=id, sender=sender,message=message)
+    session.add(l)
+    session.commit()
+    session.close()
+
 def createTablesDB():
     Base.metadata.create_all(engine)
 
