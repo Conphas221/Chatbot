@@ -294,5 +294,3308 @@
   {
     "input": "Do you need some support?",
     "output": "Question"
-  }
-]
+  },
+  
+    {
+      "input": "Was Volta an Italian physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Volta an Italian physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Volta buried in the city of Pittsburgh?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Volta buried in the city of Pittsburgh?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Volta have a passion for the study of electricity?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Volta have a passion for the study of electricity?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the battery made by Volta credited to be?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the battery made by Volta credited to be?",
+      "output": "Question"
+    },
+    {
+      "input": "What important electrical unit was named in honor of Volta?",
+      "output": "Question"
+    },
+    {
+      "input": "What important electrical unit was named in honor of Volta?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Volta enter retirement?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Volta enter retirement?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it a disadvantage for something to be unsafe to handle?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it a disadvantage for something to be unsafe to handle?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Lombardy under Napoleon's rule in 1800?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Lombardy under Napoleon's rule in 1800?",
+      "output": "Question"
+    },
+    {
+      "input": "Was the Italian 10.000 lira banknote created before the euro?",
+      "output": "Question"
+    },
+    {
+      "input": "Was the Italian 10.000 lira banknote created before the euro?",
+      "output": "Question"
+    },
+    {
+      "input": "For how many years did Alessandro Volta live?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Alessandro Volta live to be 80 years old?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Alessandro Volta`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Alessandro Volta when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when Volta married the daughter of Count Ludovico Peregrini , Teresa , with whom he raised three sons?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the electrolyte sulphuric acid?",
+      "output": "Question"
+    },
+    {
+      "input": "Is volta buried in the city  of Como?",
+      "output": "Question"
+    },
+    {
+      "input": "Was his 1800  paper written in French?",
+      "output": "Question"
+    },
+    {
+      "input": "Before 1796, was Lombardy ruled by Austria?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he receive the Society`s 1794 Copley Medal?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he experiment with individual cells?",
+      "output": "Question"
+    },
+    {
+      "input": "When did lombardy come under Napoleon`s rule?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did he publish his invention of the Voltaic pile battery?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he become professor of experimental physics at the University of Pavia?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that his passion been always the study of electricity?",
+      "output": "Question"
+    },
+    {
+      "input": "His passion been always the study of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that Volta married the daughter of Count Ludovico Peregrini?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that he published his invention of the Voltaic pile battery?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Amedeo Avogadro Italian?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Amedeo Avogadro Italian?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Amedeo Avogadro graduate?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Amedeo Avogadro graduate?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Avogadro live in England?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Avogadro a professor of physics?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Avogadro a professor of physics?",
+      "output": "Question"
+    },
+    {
+      "input": "How many children did Avogadro have?",
+      "output": "Question"
+    },
+    {
+      "input": "How many children did Avogadro have?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Avogadro most noted for?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Avogadro most noted for?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Avogadro's number?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Avogadro's number?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Avogadro stop teaching at Turin University?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Avogadro stop teaching at Turin University?",
+      "output": "Question"
+    },
+    {
+      "input": "What subject did Avogadro study first?",
+      "output": "Question"
+    },
+    {
+      "input": "What subject did Avogadro study first?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Amedeo Avogadro`s birthplace?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Amedeo Avogadro`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when he became a professor of physics at the University of Turin?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Amedeo Avogadro`s first name?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Amedeo Avogadro`s last name?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Amedeo Avogadro born in North America?",
+      "output": "Question"
+    },
+    {
+      "input": "Was King Victor  Emmanuel  III there to pay  homage  to Avogadro?",
+      "output": "Question"
+    },
+    {
+      "input": "In fact, was Avogadro `s  famous  1811  paper written in French . )",
+      "output": "Question"
+    },
+    {
+      "input": "Is avogadro `s  number commonly used to compute  the results  of chemical reactions?",
+      "output": "Question"
+    },
+    {
+      "input": "Hence, can relative molecular  masses be calculated from the masses  of gas samples?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he publish his work?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Avogadro submit his poem?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that loschmidt calculated first the value of Avogadro number?",
+      "output": "Question"
+    },
+    {
+      "input": "Loschmidt calculated first the value of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Hence , can relative molecular masses be calculated from the masses of gas samples ?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the title of this famous 1811 paper be roughly translated into English as \"essay on determining the Relative Masses of the Elementary Molecules of Bodies\" ?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Amedeo Avogadro?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is Amedeo Avogadro from?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Anders Celcius publish his observations on the aurora borealis?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Anders Celcius publish his observations on the aurora borealis?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Anders Celsius determine about the boiling of water?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Anders Celsius determine about the boiling of water?",
+      "output": "Question"
+    },
+    {
+      "input": "Which temperature scale did Celsius propose?",
+      "output": "Question"
+    },
+    {
+      "input": "Which temperature scale did Celsius propose?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the boiling point of water dependent on?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the boiling point of water dependent on?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Celsius born?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Celsius born?",
+      "output": "Question"
+    },
+    {
+      "input": "Whad did Celsius report in his paper \"Observations of two persistent degrees on a thermometer\"?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Celsius when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Celsius when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "What is temperature would water have to be to be halfway between its standard boiling and freezing point?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the difference between Celsius' original temperature scale and the one we use today?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the difference between Celsius' original temperature scale and the one we use today?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Anders Celsius`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Anders Celsius when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Anders Celsius`s last name?",
+      "output": "Question"
+    },
+    {
+      "input": "Was celsius born in Uppsala  in Sweden?",
+      "output": "Question"
+    },
+    {
+      "input": "Is The Celsius  crater  on the Moon named after him?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Anders Celsius  ( November 27 ,  1701  April 25 ,  1744  ) a Swedish  astronomer?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Anders Celsius the first  to perform  and  publish  careful experiments  aiming at the definition  of an international  temperature  scale  on scientific grounds?",
+      "output": "Question"
+    },
+    {
+      "input": "Was he professor at Uppsala University?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that he published a collection of 316 observations?",
+      "output": "Question"
+    },
+    {
+      "input": "He published a collection of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Pronouns in which location are marked for person , number and gender?",
+      "output": "Question"
+    },
+    {
+      "input": "Can syllables begin with a vowel?",
+      "output": "Question"
+    },
+    {
+      "input": "Are calligraphers held in great esteem?",
+      "output": "Question"
+    },
+    {
+      "input": "Have many European languages borrowed numerous words from it?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the most active in Damascus and Cairo?",
+      "output": "Question"
+    },
+    {
+      "input": "Do arabs consider literary Arabic?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Arabic vehicle in science?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that the sociolinguistic situation of Arabic provides a prime example of the linguistic phenomenon?",
+      "output": "Question"
+    },
+    {
+      "input": "The sociolinguistic situation of Arabic provides a prime example of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is arabic source of vocabulary?",
+      "output": "Question"
+    },
+    {
+      "input": "Is arabic language of the Qur an?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that most speak Arabic as their native language?",
+      "output": "Question"
+    },
+    {
+      "input": "Are pronouns in Literary Arabic marked for person , number and gender ?",
+      "output": "Question"
+    },
+    {
+      "input": "However , are non-human plural nouns grammatically considered to be feminine singular ?",
+      "output": "Question"
+    },
+    {
+      "input": "Is a bee an insect?",
+      "output": "Question"
+    },
+    {
+      "input": "Are bees related to ants?",
+      "output": "Question"
+    },
+    {
+      "input": "Have managed populations of European honey bees experienced substantial declines?",
+      "output": "Question"
+    },
+    {
+      "input": "Where do bees live?",
+      "output": "Question"
+    },
+    {
+      "input": "When do bumblebee colonies reach peak population?",
+      "output": "Question"
+    },
+    {
+      "input": "What do people commonly call cleptoparasitic bees?",
+      "output": "Question"
+    },
+    {
+      "input": "How did vespoid wasps evolve?",
+      "output": "Question"
+    },
+    {
+      "input": "What do humans use bees for?",
+      "output": "Question"
+    },
+    {
+      "input": "Why do honey bee queens continue to lay eggs during the foraging season?",
+      "output": "Question"
+    },
+    {
+      "input": "Does Beijing mean \"northern capital\"?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the caves of Dragon Bone Hill near the village of Zhoukoudian in Fangshan District?",
+      "output": "Question"
+    },
+    {
+      "input": "Are hutongs disappearing?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Beijing host the Olympic Games?",
+      "output": "Question"
+    },
+    {
+      "input": "When was the An Shi Rebellion launched?",
+      "output": "Question"
+    },
+    {
+      "input": "In 1949, where did Communist forces enter without a fight?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Yuan Shikai die?",
+      "output": "Question"
+    },
+    {
+      "input": "Where does air pollution in Beijing come from?",
+      "output": "Question"
+    },
+    {
+      "input": "As of August 1st, 2006, how many trains stop daily at the Beijing Railway Station or the Beijing West Railway Station?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the name of a university (or similar institution for imparting higher education) in Beijing?",
+      "output": "Question"
+    },
+    {
+      "input": "Are famous middle  schools  in Beijing :?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Blaise Pascal a mathematician of the first order?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Blaise Pascal a mathematician of the first order?",
+      "output": "Question"
+    },
+    {
+      "input": "Could Blaise Pascal move without crutches?",
+      "output": "Question"
+    },
+    {
+      "input": "Could Blaise Pascal move without crutches?",
+      "output": "Question"
+    },
+    {
+      "input": "Has the name Pascal been given to the SI unit of pressure?",
+      "output": "Question"
+    },
+    {
+      "input": "Has the name Pascal been given to the SI unit of pressure?",
+      "output": "Question"
+    },
+    {
+      "input": "From what did Pascal suffer throughout his life?",
+      "output": "Question"
+    },
+    {
+      "input": "From what did Pascal suffer throughout his life?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Pascal argue was as perfect as possible?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Pascal argue was as perfect as possible?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the best physician?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was the eldest sibling?",
+      "output": "Question"
+    },
+    {
+      "input": "Aside from the Provincial Letters' religious influence, were they popular as a literary work?",
+      "output": "Question"
+    },
+    {
+      "input": "Aside from the Provincial Letters' religious influence, were they popular as a literary work?",
+      "output": "Question"
+    },
+    {
+      "input": "Of whose continual poor health was the cause never precisely determined?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the violin cello a bowed string instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the violin cello a bowed string instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the purfling just for decoration?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the z-holes used as access points to the interior of the cello? ",
+      "output": "Question"
+    },
+    {
+      "input": "Are the z-holes used as access points to the interior of the cello? ",
+      "output": "Question"
+    },
+    {
+      "input": "What does violincello mean?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the two materials that bows are made of traditionally? ",
+      "output": "Question"
+    },
+    {
+      "input": "What is used to tune a cello?",
+      "output": "Question"
+    },
+    {
+      "input": "What is used to tune a cello?",
+      "output": "Question"
+    },
+    {
+      "input": "Which harmonics can produce any notes above middle C? ",
+      "output": "Question"
+    },
+    {
+      "input": "Which harmonics can produce any notes above middle C? ",
+      "output": "Question"
+    },
+    {
+      "input": "Who referred to the cello as �basso de viola da braccio\"?",
+      "output": "Question"
+    },
+    {
+      "input": "Who referred to the cello as �basso de viola da braccio\"?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is the violincello held?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is the violincello held?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there cello in performances by Rihanna?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there cello in performances by Rihanna?",
+      "output": "Question"
+    },
+    {
+      "input": "Are cellos constructed with glue?",
+      "output": "Question"
+    },
+    {
+      "input": "Are cellos constructed with glue?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the cello a stringed instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the cello a stringed instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "What is cello an abbreviation of?",
+      "output": "Question"
+    },
+    {
+      "input": "What is cello an abbreviation of?",
+      "output": "Question"
+    },
+    {
+      "input": "What position is used to play the cello?",
+      "output": "Question"
+    },
+    {
+      "input": "What position is used to play the cello?",
+      "output": "Question"
+    },
+    {
+      "input": "What is a person who plays the cello called?",
+      "output": "Question"
+    },
+    {
+      "input": "What is a person who plays the cello called?",
+      "output": "Question"
+    },
+    {
+      "input": "Why is there purling on a cello?",
+      "output": "Question"
+    },
+    {
+      "input": "When did the first educational works appear for the cello?",
+      "output": "Question"
+    },
+    {
+      "input": "When did the first educational works appear for the cello?",
+      "output": "Question"
+    },
+    {
+      "input": "What cello manufacturer should I buy from if I want to play outside?",
+      "output": "Question"
+    },
+    {
+      "input": "What cello manufacturer should I buy from if I want to play outside?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Charles-Augustin de Coulomb a member of the National Institute?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Charles-Augustin de Coulomb a member of the National Institute?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Charles-Augustin de Coulomb find any relationship between electric charges and magnetic poles? ",
+      "output": "Question"
+    },
+    {
+      "input": "Did Charles-Augustin de Coulomb find any relationship between electric charges and magnetic poles? ",
+      "output": "Question"
+    },
+    {
+      "input": "Was Charles-Augustin de Coulomb's father's family in Montpellier? ",
+      "output": "Question"
+    },
+    {
+      "input": "Was Charles-Augustin de Coulomb's father's family in Montpellier? ",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Charles-Augustin de Coulomb die?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Charles-Augustin de Coulomb die?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Charles-Augustin de Coulomb permanently stationed in Paris?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Charles-Augustin de Coulomb permanently stationed in Paris?",
+      "output": "Question"
+    },
+    {
+      "input": "What contribution did Charles-Augustin de Coulomb make to the field of geotechnical engineering?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did the construction of Fort Bourbon take place?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did the construction of Fort Bourbon take place?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the definition of the electrostatic force of attraction and repulsion? ",
+      "output": "Question"
+    },
+    {
+      "input": "What is the definition of the electrostatic force of attraction and repulsion? ",
+      "output": "Question"
+    },
+    {
+      "input": "When did Charles-Augustin de Coulomb retire to a small estate he possessed at Blois?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Charles-Augustin de Coulomb retire to a small estate he possessed at Blois?",
+      "output": "Question"
+    },
+    {
+      "input": "If Charles-Augustin de Coulomb was alive today, how old would he have been?",
+      "output": "Question"
+    },
+    {
+      "input": "For how many years did Charles-Augustin de Coulomb live?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Charles-Augustin de Coulomb live to be 80 years old?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Charles-Augustin de Coulomb when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago did he resign his appointment as intendant de eaux et fontaine ?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago did Charles-Augustin de Coulomb die?",
+      "output": "Question"
+    },
+    {
+      "input": "Was The SI  unit  of charge , the  coulomb , named after him?",
+      "output": "Question"
+    },
+    {
+      "input": "Was coulomb born in Angoulême,  France ,  to a well  to do  family?",
+      "output": "Question"
+    },
+    {
+      "input": "Was his father ,  Henri  Coulomb , inspector of the Royal  Fields  in Montpellier?",
+      "output": "Question"
+    },
+    {
+      "input": "Is coulomb distinguished in the history  of mechanics  and  of electricity and  magnetism?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Charles Augustin  de Coulomb  ( born  June  14 ,  1736 ,  Angoulême ,  France  -  died August 23 ,  1806 ,  Paris ,  France  ) a French  physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Does Coulomb leave a legacy?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Charles-Augustin de Coulomb born?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he publish an important investigation of the laws of friction?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Coulomb born in Angoulême, France, to a well to do family?",
+      "output": "Question"
+    },
+    {
+      "input": "Was his father inspector of the Royal Fields?",
+      "output": "Question"
+    },
+    {
+      "input": "He discovered an inverse relationship of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that coulomb leaves a legacy as a hero?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is Charles-Augustin de Coulomb from?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Chinese language`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Chinese language`s first name?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Chinese language`s last name?",
+      "output": "Question"
+    },
+    {
+      "input": "How many offspring did Chinese language have?",
+      "output": "Question"
+    },
+    {
+      "input": "The Mandarin dialects in which location have experienced a dramatic decrease in sounds and so have far more multisyllabic words than most other spoken varieties?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Old Chinese wholly uninflected?",
+      "output": "Question"
+    },
+    {
+      "input": "In North Korea, has Hanja been discontinued?",
+      "output": "Question"
+    },
+    {
+      "input": "The most  widespread is the Palladius  system?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Vietnamese  term  for Chinese writing Hán t?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the Empire have little success?",
+      "output": "Question"
+    },
+    {
+      "input": "When are most of these groups mutually unintelligible?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the population of Chinese language?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the most widespread the Palladius system?",
+      "output": "Question"
+    },
+    {
+      "input": "Are most of these groups mutually unintelligible?",
+      "output": "Question"
+    },
+    {
+      "input": "In what country is Chinese language located?",
+      "output": "Question"
+    },
+    {
+      "input": "Are The modern Chinese dialects more like a family?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that one-fifth of world population speak some form of Chinese?",
+      "output": "Question"
+    },
+    {
+      "input": "One-fifth of world population speak some form of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is mandarin spoken Chinese distinguished by its high level?",
+      "output": "Question"
+    },
+    {
+      "input": "Is standard Mandarin language of People Republic?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there many systems of romanization for the chinese languages due to the Chinese`s own lack of phonetic transcription until modern times ?",
+      "output": "Question"
+    },
+    {
+      "input": "May the idea of Chinese as a language family suggest that the chinese identity is much more fragmentary and disunified than Chinese language actually is and as such is often looked upon as culturally and politically provocative ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are most chinese words formed out of native chinese morphemes , including words describing imported objects and ideas ?",
+      "output": "Question"
+    },
+    {
+      "input": "May a native of Guangzhou speak Standard Cantonese and putonghua , a resident of Taiwan , both taiwanese and putonghua/guoyu ?",
+      "output": "Question"
+    },
+    {
+      "input": "Refer most chinese and chinese linguists to chinese as a single language and Chinese language`s subdivisions dialects , while others call chinese a language family ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there between 7 and 13 main regional groups of Chinese , of which the most spoken , by far , is about 850 million , followed by 90 million , 70 million and 70 million ?",
+      "output": "Question"
+    },
+    {
+      "input": "Copenhagen is the capital of what country?",
+      "output": "Question"
+    },
+    {
+      "input": "Copenhagen is the capital of what country?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the population of Copenhagen?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the population of Copenhagen?",
+      "output": "Question"
+    },
+    {
+      "input": "What transnational bridge was completed in 2000?",
+      "output": "Question"
+    },
+    {
+      "input": "What transnational bridge was completed in 2000?",
+      "output": "Question"
+    },
+    {
+      "input": "Why is Copenhagen a regional hub?",
+      "output": "Question"
+    },
+    {
+      "input": "Why is Copenhagen a regional hub?",
+      "output": "Question"
+    },
+    {
+      "input": "What happened to Copenhagen between 1251 and 1255?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Copenhagen completely surrounded with water? ",
+      "output": "Question"
+    },
+    {
+      "input": "Copenhagen is ranked number one worldwide for which things?",
+      "output": "Question"
+    },
+    {
+      "input": "Copenhagen is ranked number one worldwide for which things?",
+      "output": "Question"
+    },
+    {
+      "input": "Why did German troops occupy Copenhagen?",
+      "output": "Question"
+    },
+    {
+      "input": "Have cymbals been used historically to suggest bacchanal?",
+      "output": "Question"
+    },
+    {
+      "input": "Have cymbals been used historically to suggest bacchanal?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the origins of cymbals be traced to prehistoric times?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the origins of cymbals be traced to prehistoric times?",
+      "output": "Question"
+    },
+    {
+      "input": "Are cymbals used in moden orchestras?",
+      "output": "Question"
+    },
+    {
+      "input": "Are cymbals used in moden orchestras?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the most common Cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the most common Cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the second main orchestral use of cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the second main orchestral use of cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What have clash cymbals traditionally been accompanied by?",
+      "output": "Question"
+    },
+    {
+      "input": "What have clash cymbals traditionally been accompanied by?",
+      "output": "Question"
+    },
+    {
+      "input": "What happens when the center of a Cymbal is hit?",
+      "output": "Question"
+    },
+    {
+      "input": "What happens when the center of a Cymbal is hit?",
+      "output": "Question"
+    },
+    {
+      "input": "What is an effective way to accentuate a note?",
+      "output": "Question"
+    },
+    {
+      "input": "What is an effective way to accentuate a note?",
+      "output": "Question"
+    },
+    {
+      "input": "From what type of Cymbals can a expert player obtain an enormous dynamic range?",
+      "output": "Question"
+    },
+    {
+      "input": "From what type of Cymbals can a expert player obtain an enormous dynamic range?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the origins of cymbals be traced back to prehistoric times?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the origins of cymbals be traced back to prehistoric times?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the modern hi-hat evolve from clash cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the modern hi-hat evolve from clash cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the word cymbal derived from a Germanic word?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the word cymbal derived from a Germanic word?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the center of a cymbal called?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the center of a cymbal called?",
+      "output": "Question"
+    },
+    {
+      "input": "What part of the cymbal gets the best \"crash\"?",
+      "output": "Question"
+    },
+    {
+      "input": "What part of the cymbal gets the best \"crash\"?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the second main orchestral use of cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the second main orchestral use of cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What two instruments form the modern drum kit?",
+      "output": "Question"
+    },
+    {
+      "input": "What Greek mythical creatures were depicted holding cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What Greek mythical creatures were depicted holding cymbals?",
+      "output": "Question"
+    },
+    {
+      "input": "What are orchestral crash cymbals technically called?",
+      "output": "Question"
+    },
+    {
+      "input": "What are orchestral crash cymbals technically called?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Dhaka the capital of Bangladesh?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Dhaka located on the eastern banks of the Buriganga River?",
+      "output": "Question"
+    },
+    {
+      "input": "Is University of Dhaka the largest public university in Dhaka?",
+      "output": "Question"
+    },
+    {
+      "input": "How much area does Dhaka cover?",
+      "output": "Question"
+    },
+    {
+      "input": "How many people did the 1970 Bhola cyclone kill?",
+      "output": "Question"
+    },
+    {
+      "input": "When is the end of the independence war of Bangladesh?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the Mughals arrive in Dhaka?",
+      "output": "Question"
+    },
+    {
+      "input": "Is University of Dhaka older than the Dhaka College?",
+      "output": "Question"
+    },
+    {
+      "input": "What is given for the number of native speakers?",
+      "output": "Question"
+    },
+    {
+      "input": "Is english an intonation  language?",
+      "output": "Question"
+    },
+    {
+      "input": "Is english a de  jure  official  language  of Israel?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the stressed  syllable called the nuclear  syllable?",
+      "output": "Question"
+    },
+    {
+      "input": "Does english grammar have minimal inflection?",
+      "output": "Question"
+    },
+    {
+      "input": "Did old English develop into Middle English?",
+      "output": "Question"
+    },
+    {
+      "input": "Are books, magazines, and newspapers written in English available?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the syntax of German different with different rules?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that semantics causes a number of false friends?",
+      "output": "Question"
+    },
+    {
+      "input": "Here , are all syllables unstressed , except the syllables/words best and done , which are stressed ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are many words describing the navy , types of ships , and other objects or activities on the water of dutch origin ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are local variations in the formal written version of the language quite limited , being restricted largely to the spelling differences between British and American English ?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the flute a musical instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the flute a musical instrument?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it possible to open flutes at one or both ends?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it possible to open flutes at one or both ends?",
+      "output": "Question"
+    },
+    {
+      "input": "Are Indian concert flutes available in standard pitches?",
+      "output": "Question"
+    },
+    {
+      "input": "Are Indian concert flutes available in standard pitches?",
+      "output": "Question"
+    },
+    {
+      "input": "What do we refer musicians who play flute?",
+      "output": "Question"
+    },
+    {
+      "input": "What do we refer musicians who play flute?",
+      "output": "Question"
+    },
+    {
+      "input": "When was a three-holed flute made from a mammoth tusk discovered?",
+      "output": "Question"
+    },
+    {
+      "input": "When was a three-holed flute made from a mammoth tusk discovered?",
+      "output": "Question"
+    },
+    {
+      "input": "When did the tin whistle first appear?",
+      "output": "Question"
+    },
+    {
+      "input": "When did the tin whistle first appear?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the oldest known musical instruments?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the oldest known musical instruments?",
+      "output": "Question"
+    },
+    {
+      "input": "When was the pan flute spread to other parts of Europe?",
+      "output": "Question"
+    },
+    {
+      "input": "When was the pan flute spread to other parts of Europe?",
+      "output": "Question"
+    },
+    {
+      "input": "What does the air stream across this hole create?",
+      "output": "Question"
+    },
+    {
+      "input": "Are foxes wary of humans?",
+      "output": "Question"
+    },
+    {
+      "input": "Are foxes wary of humans?",
+      "output": "Question"
+    },
+    {
+      "input": "Are fennec foxes endangered?",
+      "output": "Question"
+    },
+    {
+      "input": "Are fennec foxes endangered?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the diet of foxes include reptiles?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the diet of foxes include reptiles?",
+      "output": "Question"
+    },
+    {
+      "input": "How long do most foxes live?",
+      "output": "Question"
+    },
+    {
+      "input": "How long do most foxes live?",
+      "output": "Question"
+    },
+    {
+      "input": "In what country did fox hunting originate?",
+      "output": "Question"
+    },
+    {
+      "input": "In what country did fox hunting originate?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the smallest species of fox?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the smallest species of fox?",
+      "output": "Question"
+    },
+    {
+      "input": "What are female foxes called?",
+      "output": "Question"
+    },
+    {
+      "input": "What are female foxes called?",
+      "output": "Question"
+    },
+    {
+      "input": "What is caching food?",
+      "output": "Question"
+    },
+    {
+      "input": "What is caching food?",
+      "output": "Question"
+    },
+    {
+      "input": "Do foxes damage fruit on farms?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago did African people spread across 31 francophone African countries can speak French either as a first or second language?",
+      "output": "Question"
+    },
+    {
+      "input": "In Old French, was the plural  for animal animals?",
+      "output": "Question"
+    },
+    {
+      "input": "Is catalan the only  official  language  of Andorra?",
+      "output": "Question"
+    },
+    {
+      "input": "In Belgium, however, is quatre-vingts universally used?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is it an official language?",
+      "output": "Question"
+    },
+    {
+      "input": "Is french taught in many schools as a primary language along with Arabic?",
+      "output": "Question"
+    },
+    {
+      "input": "What is widely used by the Lebanese, especially for administrative purposes?",
+      "output": "Question"
+    },
+    {
+      "input": "Is french descendant of the Latin language?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there also a variety of regional languages In addition?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that france signed the European Charter for Regional Languages?",
+      "output": "Question"
+    },
+    {
+      "input": "France signed the European Charter for what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is french language of 20  %?",
+      "output": "Question"
+    },
+    {
+      "input": "Is French language of Wallonia?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the prefixes en- and em- always nasalized ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are French and German not official languages nor recognised minority languages in the flemish region , although there are a dozen municipalities with language facilities for French-speakers ?",
+      "output": "Question"
+    },
+    {
+      "input": "Can the palatal nasal occur in word initial position ( e.g ?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was the Luther Bible by Martin Luther printed?",
+      "output": "Question"
+    },
+    {
+      "input": "Is german an inflected  language?",
+      "output": "Question"
+    },
+    {
+      "input": "In Switzerland, is ß used at all?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there two common  word  orders?",
+      "output": "Question"
+    },
+    {
+      "input": "Are feminines declined in the singular?",
+      "output": "Question"
+    },
+    {
+      "input": "Is 9 %  of the Internet  population German?",
+      "output": "Question"
+    },
+    {
+      "input": "Is german written using the Latin  alphabet?",
+      "output": "Question"
+    },
+    {
+      "input": "Was the Luther Bible by Martin Luther printed?",
+      "output": "Question"
+    },
+    {
+      "input": "Does a  tz indicate that the preceding vowel is short?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there 622,650 speakers of German In Canada?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there also large populations of German ancestry In Mexico?",
+      "output": "Question"
+    },
+    {
+      "input": "Would Bundesländer not accept North Rhine Westphalia and Bavaria ?",
+      "output": "Question"
+    },
+    {
+      "input": "Have adverbs of time to appear in the third place in the sentence , just after the predicate ?",
+      "output": "Question"
+    },
+    {
+      "input": "Do both sexes of giraffe have horns?",
+      "output": "Question"
+    },
+    {
+      "input": "Do both sexes of giraffe have horns?",
+      "output": "Question"
+    },
+    {
+      "input": "Do giraffes give birth standing up?",
+      "output": "Question"
+    },
+    {
+      "input": "Do giraffes give birth standing up?",
+      "output": "Question"
+    },
+    {
+      "input": "Are giraffes hunted for their hides?",
+      "output": "Question"
+    },
+    {
+      "input": "Are giraffes hunted for their hides?",
+      "output": "Question"
+    },
+    {
+      "input": "What areas can giraffes inhabit?",
+      "output": "Question"
+    },
+    {
+      "input": "What areas can giraffes inhabit?",
+      "output": "Question"
+    },
+    {
+      "input": "What will a giraffe use to clean off any bugs that appear on its face?",
+      "output": "Question"
+    },
+    {
+      "input": "What will a giraffe use to clean off any bugs that appear on its face?",
+      "output": "Question"
+    },
+    {
+      "input": "How do giraffes defend themselves?",
+      "output": "Question"
+    },
+    {
+      "input": "How do giraffes defend themselves?",
+      "output": "Question"
+    },
+    {
+      "input": "Do male giraffes weigh more than female giraffes?",
+      "output": "Question"
+    },
+    {
+      "input": "Do male giraffes weigh more than female giraffes?",
+      "output": "Question"
+    },
+    {
+      "input": "Do male giraffes have larger horns than female giraffes?",
+      "output": "Question"
+    },
+    {
+      "input": "Do male giraffes have larger horns than female giraffes?",
+      "output": "Question"
+    },
+    {
+      "input": "Are male females generally taller than female giraffes?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel one of the discoverers of radioactivity?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel one of the discoverers of radioactivity?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the SI unit for radioactivity named after him?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the SI unit for radioactivity named after him?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel a French physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel a French physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Henri Becquerel die?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Henri Becquerel die?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Henri Becquerel born?",
+      "output": "Question"
+    },
+    {
+      "input": "Where was Henri Becquerel born?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Henri Becquerel win the Nobel Prize in Physics?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did Henri Becquerel win the Nobel Prize in Physics?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel first in his family to occupy the physics chair at the Museum National d'Histoire Naturelle?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel first in his family to occupy the physics chair at the Museum National d'Histoire Naturelle?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel the sole winner of the 1903 Nobel Prize in Physics?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Henri Becquerel the sole winner of the 1903 Nobel Prize in Physics?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Henri Becquerel intentionally discover radioactivity?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Henri Becquerel intentionally discover radioactivity?",
+      "output": "Question"
+    },
+    {
+      "input": "If Henri Becquerel was alive today, how old would he have been?",
+      "output": "Question"
+    },
+    {
+      "input": "For how many years did Henri Becquerel live?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Henri Becquerel live to be 80 years old?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Henri Becquerel`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How old was Henri Becquerel when he died?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when he became the third in his family to occupy the physics chair at the Musum National d`Histoire Naturelle?",
+      "output": "Question"
+    },
+    {
+      "input": "In 1908, the year  of his death, was Becquerel elected Permanent Secretary  of the Académie  des  Sciences?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Henri Becquerel born?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he become chief engineer in the Department of Bridges and Highways?",
+      "output": "Question"
+    },
+    {
+      "input": "Did he share the Nobel Prize in Physics?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that Becquerel wrapped a fluorescent substance in photographic plates?",
+      "output": "Question"
+    },
+    {
+      "input": "Becquerel wrapped a fluorescent substance in what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there a Becquerel crater on the Moon for radioactivity?",
+      "output": "Question"
+    },
+    {
+      "input": "Must … One conclude from these experiments that the phosphorescent substance in question emits rays which pass through the opaque paper and reduces silver salts ?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Henri Becquerel?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is Henri Becquerel from?",
+      "output": "Question"
+    },
+    {
+      "input": "What does Henri Becquerel do?",
+      "output": "Question"
+    },
+    {
+      "input": "What does Henri Becquerel do?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Newton a English physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Newton a English physicist?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Newton reject the church's doctrine of the Trinity?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Newton reject the church's doctrine of the Trinity?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Newton admitted into Havard College?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Newton admitted into Havard College?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Newton's date of birth recorded?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Newton's date of birth recorded?",
+      "output": "Question"
+    },
+    {
+      "input": "How many laws of motion did Netwon have?",
+      "output": "Question"
+    },
+    {
+      "input": "How many laws of motion did Netwon have?",
+      "output": "Question"
+    },
+    {
+      "input": "Who did Newton see as the master creator?",
+      "output": "Question"
+    },
+    {
+      "input": "Who did Newton see as the master creator?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Netwon investigate the refraction of light",
+      "output": "Question"
+    },
+    {
+      "input": "When did Netwon investigate the refraction of light",
+      "output": "Question"
+    },
+    {
+      "input": "What principles did Newton explain for mechanics?",
+      "output": "Question"
+    },
+    {
+      "input": "What principles did Newton explain for mechanics?",
+      "output": "Question"
+    },
+    {
+      "input": "Interaction with what man stirred up Newton's interest in alchemy?",
+      "output": "Question"
+    },
+    {
+      "input": "Interaction with what man stirred up Newton's interest in alchemy?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Italian language`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Italian language`s first name?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Italian language`s last name?",
+      "output": "Question"
+    },
+    {
+      "input": "How many offspring did Italian language have?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Italian language die?",
+      "output": "Question"
+    },
+    {
+      "input": "Are geminate plosives and affricates realised as lengthened closures?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is this letter silent?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Italian one of official four languages?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that legge sulle fonti del diritto of 7?",
+      "output": "Question"
+    },
+    {
+      "input": "Legge sulle fonti del diritto of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that Italian retained the contrast between short consonants?",
+      "output": "Question"
+    },
+    {
+      "input": "Italian retained the contrast between what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is stress distinctive in most Romance languages?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the speakers who use italian as a second or cultural language estimated at around 110-120 million ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are front/back vowel rules for C and G similar in French , Romanian , Spanish , and to some extent English ?",
+      "output": "Question"
+    },
+    {
+      "input": "So can Italian language hear \"istànbul \" or \"Ìstanbul\" ?",
+      "output": "Question"
+    },
+    {
+      "input": "Will , the vowel sounds be pronounced separately) ?",
+      "output": "Question"
+    },
+    {
+      "input": "Can Regional differences be recognized by various factors : the openness of vowels , the length of the consonants , and influence of the local dialect ?",
+      "output": "Question"
+    },
+    {
+      "input": "Give dictionaries the latter as an alternative pronunciation ?",
+      "output": "Question"
+    },
+    {
+      "input": "James Watt's improvements of what were fundamental to the changes wrought by the Industrial Revolution?",
+      "output": "Question"
+    },
+    {
+      "input": "James Watt's improvements of what were fundamental to the changes wrought by the Industrial Revolution?",
+      "output": "Question"
+    },
+    {
+      "input": "James Watt was born where?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the name of James Watt's mother?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the name of James Watt's mother?",
+      "output": "Question"
+    },
+    {
+      "input": "How many of James Watt's children did not live to adulthood?",
+      "output": "Question"
+    },
+    {
+      "input": "How many of James Watt's children did not live to adulthood?",
+      "output": "Question"
+    },
+    {
+      "input": "James Watt ranked first among how many people in Charles Murray's survey of historiometry?",
+      "output": "Question"
+    },
+    {
+      "input": "James Watt ranked first among how many people in Charles Murray's survey of historiometry?",
+      "output": "Question"
+    },
+    {
+      "input": "In what year did James travel to Lodon to study instrument-making?",
+      "output": "Question"
+    },
+    {
+      "input": "For how many years of James Watt's life was his mother alive?",
+      "output": "Question"
+    },
+    {
+      "input": "What is James Watt most famous for?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Japanese language`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Japanese language`s first name?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the basic sentence structure topic-comment?",
+      "output": "Question"
+    },
+    {
+      "input": "Where are the circumstances complicated?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the   form indicate a perfect tense?",
+      "output": "Question"
+    },
+    {
+      "input": "Is or a conception that forms the counterpart of dialect?",
+      "output": "Question"
+    },
+    {
+      "input": "Do most Japanese people employ politeness?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that Japanese borrowed a considerable number of words?",
+      "output": "Question"
+    },
+    {
+      "input": "Japanese borrowed a considerable number of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is japanese language in the island?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there a form of the language?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the several dialects of Kagoshima famous to speakers?",
+      "output": "Question"
+    },
+    {
+      "input": "I.e \"yamato words \") , which in scholarly contexts is sometimes referred to as ( or rarely , i.e \"yamato words \" -rrb- , which in scholarly contexts is sometimes referred to as -lrb- or rarely , vp ? ?",
+      "output": "Question"
+    },
+    {
+      "input": "Are japanese personal pronouns generally used only in situations requiring special emphasis as to who is doing what to whom ?",
+      "output": "Question"
+    },
+    {
+      "input": ": give \"please Japanese language to Mr ?",
+      "output": "Question"
+    },
+    {
+      "input": "Will a japanese person use vocabulary and inflections of the honorific register to refer to the in-group superior and Japanese language`s or Japanese language`s speech and actions ?",
+      "output": "Question"
+    },
+    {
+      "input": "Thus , can polite korean speech sound very presumptuous when translated verbatim into Japanese , as in korean Japanese language is acceptable and normal to say things like \"our Mr ?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Lima the capital of Peru?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Museum of Gold in Lima?",
+      "output": "Question"
+    },
+    {
+      "input": "Does Lima have volleyball venues?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Lima founded?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is the Park of the Reserve located?",
+      "output": "Question"
+    },
+    {
+      "input": "What is a colectivo?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the National University of San Marcos in Lima?",
+      "output": "Question"
+    },
+    {
+      "input": "Has the San Lorenzo Megaport Project been completed?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was the Lima Stock Exchange the most profitable in the world?",
+      "output": "Question"
+    },
+    {
+      "input": "Is rainfall very low?",
+      "output": "Question"
+    },
+    {
+      "input": "Is lima the capital  and  largest  city  of Peru?",
+      "output": "Question"
+    },
+    {
+      "input": "Is The GDP  per capita in Lima $ 7,600  /  ref )?",
+      "output": "Question"
+    },
+    {
+      "input": "The Spanish Crown named Pizarro governor of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that the ideas of the Enlightenment shaped the development of the city?",
+      "output": "Question"
+    },
+    {
+      "input": "The ideas of the Enlightenment shaped the development of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is London the capital of the United Kingdom?",
+      "output": "Question"
+    },
+    {
+      "input": "Is London the capital of the United Kingdom?",
+      "output": "Question"
+    },
+    {
+      "input": "Does London's population draw from a wide range of religions?",
+      "output": "Question"
+    },
+    {
+      "input": "Does London's population draw from a wide range of religions?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Caunte take control of the English throne in 101?",
+      "output": "Question"
+    },
+    {
+      "input": "Over how many languages are spoken in London?",
+      "output": "Question"
+    },
+    {
+      "input": "Over how many languages are spoken in London?",
+      "output": "Question"
+    },
+    {
+      "input": "What had the Anglo-Saxons created by the 600s?",
+      "output": "Question"
+    },
+    {
+      "input": "What had the Anglo-Saxons created by the 600s?",
+      "output": "Question"
+    },
+    {
+      "input": "What city in the UK has been subjected to bouts of terrorism?",
+      "output": "Question"
+    },
+    {
+      "input": "What city in the UK has been subjected to bouts of terrorism?",
+      "output": "Question"
+    },
+    {
+      "input": "What countries did James VI of Scotland unite?",
+      "output": "Question"
+    },
+    {
+      "input": "What countries did James VI of Scotland unite?",
+      "output": "Question"
+    },
+    {
+      "input": "How did civil wars affect England during the Middle Ages?",
+      "output": "Question"
+    },
+    {
+      "input": "Are the strings of a classical lyre made of gut?",
+      "output": "Question"
+    },
+    {
+      "input": "Does a classical lyre have a sound-chest?",
+      "output": "Question"
+    },
+    {
+      "input": "Is lyre played in mordern Greece?",
+      "output": "Question"
+    },
+    {
+      "input": "Which part of the strings does the left hand touch?",
+      "output": "Question"
+    },
+    {
+      "input": "In which place is lyre still played?",
+      "output": "Question"
+    },
+    {
+      "input": "Does a classical lyre have a fingerboard?",
+      "output": "Question"
+    },
+    {
+      "input": "Is a guitar played with a plectrum like a lyre?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Michael Faraday an English chemist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Michael Faraday an English chemist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday a devout Christian?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday a devout Christian?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday considered a gentleman?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday considered a gentleman?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was a member of the Sandemanian sect of Christianity?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was a member of the Sandemanian sect of Christianity?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Joseph Henry likely discover?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Joseph Henry likely discover?",
+      "output": "Question"
+    },
+    {
+      "input": "What did the University of Oxford grant Faraday?",
+      "output": "Question"
+    },
+    {
+      "input": "What did the University of Oxford grant Faraday?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was made to travel outside the coach?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday construct the ancestor of modern power generators?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday construct the ancestor of modern power generators?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday lecture on education in 1854?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday lecture on education in 1854?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday receive an extensive formal education?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday receive an extensive formal education?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday discover the chemical substance benzene?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Faraday discover the chemical substance benzene?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday born in England?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Faraday born in England?",
+      "output": "Question"
+    },
+    {
+      "input": "What do some historians of science refer to Faraday as?",
+      "output": "Question"
+    },
+    {
+      "input": "What do some historians of science refer to Faraday as?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was the sponsor and mentor of Faraday?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was the sponsor and mentor of Faraday?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Faraday invent that is used almost universally in science laboratories?",
+      "output": "Question"
+    },
+    {
+      "input": "What did Faraday invent that is used almost universally in science laboratories?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the production of chemical weapons raise an ethical issue?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the Faraday effect first called?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the Faraday effect first called?",
+      "output": "Question"
+    },
+    {
+      "input": "Can you meet someone through attending a church?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Michael Faraday`s birthplace?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Michael Faraday`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago did Faraday report on the first synthesis of compound make from carbon and chlorine , c 2 h 6 and c 2 h 4 ?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when he discovered the phenomenon that he named diamagnetism , and what is now called the Faraday effect?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when Faraday wrote a letter to The Times on the subject of the foul condition of the River Thames , which resulted in an oft-reprinted cartoon in Punch?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when he discovered that the optical properties of gold colloids differed from those of the corresponding bulk metal?",
+      "output": "Question"
+    },
+    {
+      "input": "Was education another area  of service  for Faraday?",
+      "output": "Question"
+    },
+    {
+      "input": "Was faraday `s  earliest  chemical  work as an assistant  to Davy?",
+      "output": "Question"
+    },
+    {
+      "input": "Who died at his house at Hampton Court on August 25, 1867?",
+      "output": "Question"
+    },
+    {
+      "input": "When was Michael Faraday born?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did he serve two terms?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was born in Newington Butts, near present-day South London, England?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that institution formed the foundation of electric motor technology?",
+      "output": "Question"
+    },
+    {
+      "input": "Institution formed the foundation of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Was his father member of the Sandemanian sect?",
+      "output": "Question"
+    },
+    {
+      "input": "Was faraday Christian of the small Sandemanian denomination?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Nassau Sound a body of water in Maine?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Nassau placed in operation by Robert Fulton?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was Fort Nassau built by?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Nassau Coliseum?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the Dead or Alive 4 fighting arena modeled after?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Nassau Range the highest mountain range in the world?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Nassau County named after a German town?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the United States have a base near Glasgow?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Tesla study electrical engineering?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Tesla study electrical engineering?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla born in the United States?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla born in the United States?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla hired by Edison?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla hired by Edison?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Tesla demonstrate wireless communication (radio)?",
+      "output": "Question"
+    },
+    {
+      "input": "When did Tesla demonstrate wireless communication (radio)?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the SI unit measuring magnetic flux density or magnetic induction?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the SI unit measuring magnetic flux density or magnetic induction?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla regarded as a mad scientist?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Tesla regarded as a mad scientist?",
+      "output": "Question"
+    },
+    {
+      "input": "What type of current did Tesla invent?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was the victor of the \"War of Currents\"?",
+      "output": "Question"
+    },
+    {
+      "input": "Who was the victor of the \"War of Currents\"?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Tesla study electrical engineering?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Tesla study electrical engineering?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Ottawa the capital of Canada?",
+      "output": "Question"
+    },
+    {
+      "input": "Does Ottawa sit on the Ottowa River?",
+      "output": "Question"
+    },
+    {
+      "input": "Do small tremors occur in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Ottawa's population?",
+      "output": "Question"
+    },
+    {
+      "input": "What are Ottawa's primary industries?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Ottawa's junior ice hockey team?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Ottawa's major league hockey team?",
+      "output": "Question"
+    },
+    {
+      "input": "What are Carleton University's athletic teams called?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Ottawa colder than Moscow in January?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Ottawa on a river?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Ottawa on a river?",
+      "output": "Question"
+    },
+    {
+      "input": "Does it snow in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "Does it snow in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "Was there a cholera outbreak in 1832?",
+      "output": "Question"
+    },
+    {
+      "input": "Was there a cholera outbreak in 1832?",
+      "output": "Question"
+    },
+    {
+      "input": "Who is the mayor of Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "Who is the mayor of Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "How many townships are in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "How many townships are in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "What's the main highway in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "What's the main highway in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Ottawa's name in 1850?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Ottawa's name in 1850?",
+      "output": "Question"
+    },
+    {
+      "input": "Based on the average, in what year will the next small tremor occur in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "Based on the average, in what year will the next small tremor occur in Ottawa?",
+      "output": "Question"
+    },
+    {
+      "input": "Where were immigrants from in the 1800s?",
+      "output": "Question"
+    },
+    {
+      "input": "Where were immigrants from in the 1800s?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there also discussions of having OC Transpo Light Rail and STO Transitway networks linking on the Gatineau side of the Ottawa River ?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the giant otter live in South America?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the giant otter live in South America?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters have claws?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters have claws?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters eat fish?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters eat fish?",
+      "output": "Question"
+    },
+    {
+      "input": "What is an otter's den called?",
+      "output": "Question"
+    },
+    {
+      "input": "What is an otter's den called?",
+      "output": "Question"
+    },
+    {
+      "input": "Where do sea otters live?",
+      "output": "Question"
+    },
+    {
+      "input": "Where do sea otters live?",
+      "output": "Question"
+    },
+    {
+      "input": "Why are otters vulnerable to prey depletion?",
+      "output": "Question"
+    },
+    {
+      "input": "Why are otters vulnerable to prey depletion?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters enjoy playing?",
+      "output": "Question"
+    },
+    {
+      "input": "Do otters enjoy playing?",
+      "output": "Question"
+    },
+    {
+      "input": "Do sea otters have a layer of fat like whales?",
+      "output": "Question"
+    },
+    {
+      "input": "Do sea otters have a layer of fat like whales?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the otter in the same family as the badger?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the otter in the same family as the badger?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there any cities named Santiago in the United States?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there any cities named Santiago in the United States?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Santiago the name of an indie/punk band?",
+      "output": "Question"
+    },
+    {
+      "input": "Was Santiago the name of an indie/punk band?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Santiago a name in Spanish?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Santiago a name in Spanish?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the origin of the name Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the origin of the name Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "Who has released an album or song named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "Who has released an album or song named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Order of Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Order of Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What notable people have been named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What notable people have been named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What fictional stories include a main character named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "What fictional stories include a main character named Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "Is Santiago the national capital of a country?",
+      "output": "Question"
+    },
+    {
+      "input": "Is santiago Spanish for St. James  ( from santo ,  saint  +  iago ,  James  )?",
+      "output": "Question"
+    },
+    {
+      "input": "Is santiago Spanish for St. James?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Santiago?",
+      "output": "Question"
+    },
+    {
+      "input": "Are countries without in red?",
+      "output": "Question"
+    },
+    {
+      "input": "However, is English the official  language?",
+      "output": "Question"
+    },
+    {
+      "input": "Are most Spanish  speakers in Latin America?",
+      "output": "Question"
+    },
+    {
+      "input": "Are countries where is a regionalism in green?",
+      "output": "Question"
+    },
+    {
+      "input": "The deeper  the blue  is, is the more  predominant?",
+      "output": "Question"
+    },
+    {
+      "input": "Are these marked with an asterisk  ( *  )?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the language lose its official status?",
+      "output": "Question"
+    },
+    {
+      "input": "Where do about 400 million people speak Spanish?",
+      "output": "Question"
+    },
+    {
+      "input": "What kind of instrument is the spanish language?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the lexical similarity with Italian estimated at 82%?",
+      "output": "Question"
+    },
+    {
+      "input": "Is spanish an official language of the European Union?",
+      "output": "Question"
+    },
+    {
+      "input": "What is an official language of the European Union?",
+      "output": "Question"
+    },
+    {
+      "input": "Is it true that mexico contains the largest population of Spanish speakers?",
+      "output": "Question"
+    },
+    {
+      "input": "Mexico contains the largest population of what?",
+      "output": "Question"
+    },
+    {
+      "input": "Is this phenomenon notable in Brazil?",
+      "output": "Question"
+    },
+    {
+      "input": "Is spanish one of the official languages?",
+      "output": "Question"
+    },
+    {
+      "input": "Is universidad de México Instituto Cervantes Spanish language of Spain?",
+      "output": "Question"
+    },
+    {
+      "input": "Is spanish language of the European Union?",
+      "output": "Question"
+    },
+    {
+      "input": "Pasan en consecuencia , las palabras que comienzan por estas dos letras , o que las contienen , a alfabetizarse en los lugares que les corresponden dentro de la c y de la l , respectivamente ?",
+      "output": "Question"
+    },
+    {
+      "input": "Allow the common features of the writing systems of the Romance languages for a greater amount of interlingual reading comprehension than oral communication would ?",
+      "output": "Question"
+    },
+    {
+      "input": "What was Swahili language`s profession?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was an interterritorial conference held at Mombasa ?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Swahili language`s last name?",
+      "output": "Question"
+    },
+    {
+      "input": "How many years ago was it when the rulers of Zanzibar organized trading expeditions into the interior of the mainland , up to the various lakes in the continent `s Great Rift Valley?",
+      "output": "Question"
+    },
+    {
+      "input": "What is Swahili language`s first name?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did Swahili language die?",
+      "output": "Question"
+    },
+    {
+      "input": "Has swahili no diphthongs?",
+      "output": "Question"
+    },
+    {
+      "input": "Is a third  prefix the object  prefix?",
+      "output": "Question"
+    },
+    {
+      "input": "When is /ref>",
+      "output": "Question"
+    },
+    {
+      "input": "Swahili unusual?",
+      "output": "Question"
+    },
+    {
+      "input": "Where does swahili grammar arrange nouns?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the only good candidate in these two colonies?",
+      "output": "Question"
+    },
+    {
+      "input": "Do some writers mark aspirated consonants?",
+      "output": "Question"
+    },
+    {
+      "input": "Was one key step in spreading Swahili to create a standard written language?",
+      "output": "Question"
+    },
+    {
+      "input": "Are there today more speakers in Kenya of the Somali coast?",
+      "output": "Question"
+    },
+    {
+      "input": "Is      / ref Swahili unusual among sub-Saharan languages?",
+      "output": "Question"
+    },
+    {
+      "input": "The pronunciation of the phoneme / u / stands between what?",
+      "output": "Question"
+    },
+    {
+      "input": "Are vowels never reduced , regardless of stress ?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the Australian Black Swan have white feathers on its wings?",
+      "output": "Question"
+    },
+    {
+      "input": "Does the Australian Black Swan have white feathers on its wings?",
+      "output": "Question"
+    },
+    {
+      "input": "Do swans belong to the family Anatidae?",
+      "output": "Question"
+    },
+    {
+      "input": "Do swans belong to the family Anatidae?",
+      "output": "Question"
+    },
+    {
+      "input": "Can black swans swim with only one leg?",
+      "output": "Question"
+    },
+    {
+      "input": "Can black swans swim with only one leg?",
+      "output": "Question"
+    },
+    {
+      "input": "What are young swans known as?",
+      "output": "Question"
+    },
+    {
+      "input": "What are young swans known as?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Irish legend of the Children of Lir about?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Irish legend of the Children of Lir about?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Sanskrit word for swan?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Sanskrit word for swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Which album was the song \"The Bonny Swans\" from?",
+      "output": "Question"
+    },
+    {
+      "input": "Which album was the song \"The Bonny Swans\" from?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Polish word for swan?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the Polish word for swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Which ballet by Pyotr Tchaikovsky is partially based on an Ancient German legend about a princess who was turned into a swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Which ballet by Pyotr Tchaikovsky is partially based on an Ancient German legend about a princess who was turned into a swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Are swan birds of the family Anatidae?",
+      "output": "Question"
+    },
+    {
+      "input": "Are swan birds of the family Anatidae?",
+      "output": "Question"
+    },
+    {
+      "input": "Do swans feature strongly in mythology?",
+      "output": "Question"
+    },
+    {
+      "input": "Do swans feature strongly in mythology?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Trumpeter Swan the largest bird?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Trumpeter Swan the largest bird?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the name of young swans?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the name of young swans?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is the word \"swan\" derived from?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is the word \"swan\" derived from?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the best known story about a swan?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the best known story about a swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Are swans and ducks birds of the same family?",
+      "output": "Question"
+    },
+    {
+      "input": "Are swans and ducks birds of the same family?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the name of an adult female?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the name of an adult female?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the color of the Australian Black Swan?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the color of the Australian Black Swan?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Tiger a member of the Felidar family?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the Tiger a member of the Felidar family?",
+      "output": "Question"
+    },
+    {
+      "input": "Are tigers solitary animals?",
+      "output": "Question"
+    },
+    {
+      "input": "Are tigers solitary animals?",
+      "output": "Question"
+    },
+    {
+      "input": "Are panthers a type of tiger?",
+      "output": "Question"
+    },
+    {
+      "input": "Are panthers a type of tiger?",
+      "output": "Question"
+    },
+    {
+      "input": "What do tigers' powerfully built legs and shoulders allow tigers to do?",
+      "output": "Question"
+    },
+    {
+      "input": "What do tigers' powerfully built legs and shoulders allow tigers to do?",
+      "output": "Question"
+    },
+    {
+      "input": "What would a tiger do when seized by a crocodile?",
+      "output": "Question"
+    },
+    {
+      "input": "What would a tiger do when seized by a crocodile?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the typical features of a tiger country?",
+      "output": "Question"
+    },
+    {
+      "input": "What are the typical features of a tiger country?",
+      "output": "Question"
+    },
+    {
+      "input": "Would it be common for tigers to mate in January?",
+      "output": "Question"
+    },
+    {
+      "input": "Would it be common for tigers to mate in January?",
+      "output": "Question"
+    },
+    {
+      "input": "About how many square kilometers would be needed to house 3 female tigers?",
+      "output": "Question"
+    },
+    {
+      "input": "About how many square kilometers would be needed to house 3 female tigers?",
+      "output": "Question"
+    },
+    {
+      "input": "Would a tiger be likely to feedon smaller animals, such as mice?",
+      "output": "Question"
+    },
+    {
+      "input": "Did the predecessors to trumpets have valves?",
+      "output": "Question"
+    },
+    {
+      "input": "Are trumpets constructed of brass?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the bass trumpet the smallest trumpet?",
+      "output": "Question"
+    },
+    {
+      "input": "What musical styles is the trumpet used in?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the most common type of trumpet?",
+      "output": "Question"
+    },
+    {
+      "input": "How does a trumpet produce sound?",
+      "output": "Question"
+    },
+    {
+      "input": "How do trumpets compensate for wolf tones?",
+      "output": "Question"
+    },
+    {
+      "input": "Did Miles Davis play the trumpet?",
+      "output": "Question"
+    },
+    {
+      "input": "Does a trumpet have a mellower tone than a cornet?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the name of the upper shell of a turtle called the plastron?",
+      "output": "Question"
+    },
+    {
+      "input": "Do scutes fall away from the turtle's shell?",
+      "output": "Question"
+    },
+    {
+      "input": "Do scutes fall away from the turtle's shell?",
+      "output": "Question"
+    },
+    {
+      "input": "Do Terrestrial tortoises have short feet?",
+      "output": "Question"
+    },
+    {
+      "input": "Do Terrestrial tortoises have short feet?",
+      "output": "Question"
+    },
+    {
+      "input": "How many groups are turtles broken down into?",
+      "output": "Question"
+    },
+    {
+      "input": "How many groups are turtles broken down into?",
+      "output": "Question"
+    },
+    {
+      "input": "Where are the only surviving giant tortoises?",
+      "output": "Question"
+    },
+    {
+      "input": "Where are the only surviving giant tortoises?",
+      "output": "Question"
+    },
+    {
+      "input": "How do turtles chew food?",
+      "output": "Question"
+    },
+    {
+      "input": "How do turtles chew food?",
+      "output": "Question"
+    },
+    {
+      "input": "Are tortoises land based?",
+      "output": "Question"
+    },
+    {
+      "input": "Are tortoises land based?",
+      "output": "Question"
+    },
+    {
+      "input": "Where are turtle eggs layed?",
+      "output": "Question"
+    },
+    {
+      "input": "Where are turtle eggs layed?",
+      "output": "Question"
+    },
+    {
+      "input": "Is turtle soup considered a delicacy?",
+      "output": "Question"
+    },
+    {
+      "input": "Is turtle soup considered a delicacy?",
+      "output": "Question"
+    },
+    {
+      "input": "Are Testudines the crown group of the superorder Chelonia?",
+      "output": "Question"
+    },
+    {
+      "input": "Are Testudines the crown group of the superorder Chelonia?",
+      "output": "Question"
+    },
+    {
+      "input": "Do turtles breathe air?",
+      "output": "Question"
+    },
+    {
+      "input": "Do turtles breathe air?",
+      "output": "Question"
+    },
+    {
+      "input": "Are harvesting wild turtles legal anywhere?",
+      "output": "Question"
+    },
+    {
+      "input": "Approximately how many species of Testudines are alive today?",
+      "output": "Question"
+    },
+    {
+      "input": "Approximately how many species of Testudines are alive today?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is harvesting wild turtles legal?",
+      "output": "Question"
+    },
+    {
+      "input": "Where is harvesting wild turtles legal?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the largest ever chelonian?",
+      "output": "Question"
+    },
+    {
+      "input": "What was the largest ever chelonian?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there a way to approximate the age of a turtle?",
+      "output": "Question"
+    },
+    {
+      "input": "Is there a way to approximate the age of a turtle?",
+      "output": "Question"
+    },
+    {
+      "input": "Can turtles spend all their time underwater?",
+      "output": "Question"
+    },
+    {
+      "input": "Can turtles spend all their time underwater?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violinists and fiddlers the same thing?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violinists and fiddlers the same thing?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violins a single size?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violins a single size?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violas and cellos in the same family of instruments as violins?",
+      "output": "Question"
+    },
+    {
+      "input": "Are violas and cellos in the same family of instruments as violins?",
+      "output": "Question"
+    },
+    {
+      "input": "Where does the word \"violin\" come from?",
+      "output": "Question"
+    },
+    {
+      "input": "Where does the word \"violin\" come from?",
+      "output": "Question"
+    },
+    {
+      "input": "What is someone who makes violins called?",
+      "output": "Question"
+    },
+    {
+      "input": "What is someone who makes violins called?",
+      "output": "Question"
+    },
+    {
+      "input": "How many strings does a violin usually have?",
+      "output": "Question"
+    },
+    {
+      "input": "How many strings does a violin usually have?",
+      "output": "Question"
+    },
+    {
+      "input": "What are violins made of?",
+      "output": "Question"
+    },
+    {
+      "input": "What are violins made of?",
+      "output": "Question"
+    },
+    {
+      "input": "How long have people been making instruments like violins?",
+      "output": "Question"
+    },
+    {
+      "input": "How long have people been making instruments like violins?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the usual pitch range of a violin?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the usual pitch range of a violin?",
+      "output": "Question"
+    },
+    {
+      "input": "Are xylophone bars made of rosewood?",
+      "output": "Question"
+    },
+    {
+      "input": "Is the xylophone a precursor to the vibraphone?",
+      "output": "Question"
+    },
+    {
+      "input": "Were ancient mallets made of copper?",
+      "output": "Question"
+    },
+    {
+      "input": "Where did the xylophone originate?",
+      "output": "Question"
+    },
+    {
+      "input": "What is the earliest historical reference in Europe?",
+      "output": "Question"
+    },
+    {
+      "input": "How are western-style xylophones characterised?",
+      "output": "Question"
+    },
+    {
+      "input": "Can a xylophone be 3 octaves?",
+      "output": "Question"
+    },
+    {
+      "input": "Can a short bar follow a long bar?",
+      "output": "Question"
+    },
+    {
+      "input": "Did vibraphones exist in 1930?",
+      "output": "Question"
+    }
+   ]
+
+
