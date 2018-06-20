@@ -10,6 +10,9 @@ import nltk
 import requests
 from requests.adapters import HTTPAdapter
 import json
+import os
+import os.path as path
+
 
 #nltk.download('punkt')
 #nltk.download('wordnet')
@@ -55,7 +58,15 @@ def APIrequester(message):
 
  
 
-
+def startapi():
+    startapi_dir =  path.abspath(path.join(__file__ ,"../../api"))
+    startapi = os.path.join(startapi_dir, "startapi.bat")
+    import subprocess
+    from subprocess import Popen
+    subprocess.run("start startapi.lnk", shell=True)
+    
+    
+   
 
 
 
@@ -68,7 +79,9 @@ def main():
     # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
     RegisterCommand("quit", lambda args : exit())
-    RegisterCommand("-r", lambda args : Requests())
+    RegisterCommand("-r", lambda args : startapi())
+
+
 
 
     print("use the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
