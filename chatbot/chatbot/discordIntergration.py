@@ -41,29 +41,37 @@ async def on_message(message):
             resultString = ""
     else:
         if message.content.startswith("!Feedback"):
-            j = 0
             username = ""
             keyword = ""
             rating = ""
-            userDone = False
-            keywordDone = False
-            for i in range(0, len(message.content)):
+            Userstart = False
+            Keywordstart = False
+            Ratingstart = False
+            i = 0
+            while i < len(message.content):
                 if message.content[i] == ':':
-                    j = i + 2
-                if i >= j and not userDone and not j == 0:
-                    if not message.content[i] == ',':
+                    if message.content[i+1] == ' ':
+                            i += 1
+                    Userstart = True
+                elif Userstart:
+                    if message.content[i] == ',':
+                        if message.content[i+1] == ' ':
+                            i += 1
+                        Keywordstart = True
+                        Userstart = False
+                    else:
                         username += message.content[i]
+                elif Keywordstart:
+                    if message.content[i] == ',':
+                        if message.content[i+1] == ' ':
+                            i += 1
+                        Ratingstart = True
+                        Keywordstart = False
                     else:
-                        userDone = True
-                        j = 0
-                elif i >= j and not keywordDone and not j == 0:
-                    if not message.content[i] == ',':
                         keyword += message.content[i]
-                    else:
-                        keywordDone = True
-                        j = 0
-                elif i >= j and not j == 0:
+                elif Ratingstart:
                     rating += message.content[i]
+                i += 1
             floatrating = None
             try:
                 floatrating = float(rating)
@@ -109,7 +117,7 @@ async def on_message(message):
                 else:
                     resultString = "I couldn't find any keywords in your message or there is no information on the keywords."
             elif message.content.startswith("!"):
-                feedbackString = "Could you please give me feedback on the help the suggested person(s) gave you?\nPlease format your message like this:\n!Feedback User: <username>, Keyword: <keyword>, Rating: <rating from 1.0 - 10.0>"
+                feedbackString = "Could you please give me feedback on the help the suggested person(s) gave you?\nPlease format your message like this:\n!Feedback:<username>,<keyword>,<rating from 1.0 - 10.0>"
     if not resultString == "":
         await client.send_message(message.channel, resultString)
         print(resultString)
