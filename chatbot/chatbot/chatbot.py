@@ -72,10 +72,7 @@ def main():
     RegisterCommand("quit", lambda args : exit())
     RegisterCommand("-r", lambda args : threading.Thread(target = startapi).start())
 
-
-
-
-    print("use the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
+    print("use the -r command to start the API"+ "\nuse the -b command to enter discord bot mode"+"\nEnter a keyword to look up users with relevant experience")
 
     # Command loop
     while True:
