@@ -12,6 +12,8 @@ from requests.adapters import HTTPAdapter
 import json
 import os
 import os.path as path
+import threading
+
 
 
 #nltk.download('punkt')
@@ -45,25 +47,14 @@ def RunCommand(command, args):
             return True
 
     return False
-
-
-def APIrequester(message):
-
-    url = "http://localhost:5000/analyse"
-
-   # payload1 = {'data': 'I need assistance with a compile error in c#'}
-    r = requests.post(url, json={"data": message})
-    print(r)
-    print(r.status_code)
-
  
 
 def startapi():
-    startapi_dir =  path.abspath(path.join(__file__ ,"../../api"))
-    startapi = os.path.join(startapi_dir, "startapi.bat")
+    os.chdir("../api")
+
     import subprocess
     from subprocess import Popen
-    subprocess.run("start startapi.lnk", shell=True)
+    subprocess.run("node index.js", shell=True)
     
     
    
@@ -77,9 +68,9 @@ def startapi():
 # Define main() function
 def main():
     # Register commands
-    RegisterCommand("-b", lambda args : discordIntergration.main())
+    RegisterCommand("-b", lambda args : threading.Thread(target = discordIntergration.main).start())
     RegisterCommand("quit", lambda args : exit())
-    RegisterCommand("-r", lambda args : startapi())
+    RegisterCommand("-r", lambda args : threading.Thread(target = startapi).start())
 
 
 

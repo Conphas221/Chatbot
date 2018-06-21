@@ -5,6 +5,7 @@ let keywords = require('./keywords');
 let questionNet = new brain.recurrent.LSTM();
 let helpNet = new brain.recurrent.LSTM();
 
+// parses the trained data for the neural network
 let parseNetwork = (network, file) => {
     let buffer = fs.readFileSync(file);
 
@@ -20,6 +21,7 @@ let parseNetwork = (network, file) => {
 let express = require('express');
 let bodyParser = require('body-parser');
 
+// Finds keywords in a statement, finds if a statement is a question and if the user needs help
 let handleStatement = statement => {
     let response = {};
 
@@ -40,8 +42,8 @@ let main = () => {
     parseNetwork(questionNet, 'nn/question_network.json');
     parseNetwork(helpNet, 'nn/help_network.json');
 
-    handleStatement('I need help with a bug I have in my C++ code');
-    handleStatement('Do you need some help with your issue?');
+    // handleStatement('I love playing with python libraries');
+    // handleStatement('Do you love me?');
 
     // HTTP API
     let app = express();
