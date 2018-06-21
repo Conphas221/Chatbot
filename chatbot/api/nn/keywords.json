@@ -9,7 +9,7 @@
     "nodejs",
     "ruby",
     "rails",
-    "d",
+    "android",
     "java",
     "html",
     "css",
@@ -23,9 +23,12 @@
 	"xamarin",
 	"z++",
 	"f#",
+	"k-means",
+	"k12",
 	
 
     "bug",
+    "debug",
     "issue",
     "error",
     "exception",
