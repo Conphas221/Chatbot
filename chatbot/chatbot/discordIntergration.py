@@ -36,8 +36,8 @@ async def on_message(message):
 
     resultString = ""
     feedbackString = ""
-   # if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):# Lia
-    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content): #pj78 bot
+    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):# Lia
+   # if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content): #pj78 bot
         try:
             keyword1 = analyse.APIrequester(message.content)
             keywords = keyword1['keywords']
@@ -110,8 +110,8 @@ async def on_message(message):
         
                 except:
                     resultString = ""
-            elif "<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content: #pj78
-            #elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:#lia
+           # elif "<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content: #pj78
+            elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:#lia
                 try:
                
                     keyword1 = analyse.APIrequester(message.content[21:])
@@ -172,6 +172,6 @@ def main():
     file.close()
 
     # run discord bot
-    #TOKEN = 'NDU4NjM1OTUwNDI4NTIwNDcy.Dgqhlw.KcYdamEg9IeHrVVqyf5DhjsUc2g' #Lia
-    TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI' #p78 bot
+    TOKEN = 'NDU4NjM1OTUwNDI4NTIwNDcy.Dgqhlw.KcYdamEg9IeHrVVqyf5DhjsUc2g' #Lia
+    #TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI' #p78 bot
     client.run(TOKEN)
