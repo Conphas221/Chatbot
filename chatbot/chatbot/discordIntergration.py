@@ -112,11 +112,9 @@ async def on_message(message):
                     resultString = ""
             else:
                 resultString = bot.get_response(message.content)
-              # continue
             if resultString == "These are the keywords I found in your message and a person that might be able to help you: " or resultString == "":
                 if not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):
-                   # resultString = bot.get_response(message.content)
-                   print("huh")
+                    resultString = bot.get_response(message.content)
                 else:
                     resultString = "I couldn't find any keywords in your message or there is no information on the keywords."
             elif message.content.startswith("!"):
