@@ -31,8 +31,8 @@ let trainNetwork = (network, trainFile, outFile, iterations) => {
 
 let main = () => {
     // train the neural networks
-    trainNetwork(questionNet, 'train/question_network.json', 'nn/question_network.json', 2000);
-    trainNetwork(helpNet, 'train/help_network.json', 'nn/help_network.json', 2000);
+    trainNetwork(questionNet, 'train/question_network.json', 'nn/question_network.json', 2);
+    trainNetwork(helpNet, 'train/help_network.json', 'nn/help_network.json', 1);
 };
 
 // start the application

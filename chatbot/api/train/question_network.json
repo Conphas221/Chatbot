@@ -11,6 +11,50 @@
     "input": "Do you like traveling?",
     "output": "Question"
   },
+    {
+    "input": "What is q??",
+    "output": "Question"
+  },
+    {
+    "input": "What is j?,",
+    "output": "Question"
+  },
+    {
+    "input": "What is k?",
+    "output": "Question"
+  },
+      {
+    "input": "What is #?",
+    "output": "Question"
+  },
+    {
+    "input": "What is a kilobyte?",
+    "output": "Question"
+},
+  {
+    "input": "What time are we meeting?",
+    "output": "Question"
+  },
+  {
+    "input": "why is my sql query incorrect?",
+    "output": "Question"
+  },
+    {
+    "input": "How do you use k-means?",
+    "output": "Question"
+  },
+      {
+    "input": "Is using linq a good idea here?",
+    "output": "Question"
+  },    
+  {
+    "input": "Should I use xamarin?",
+    "output": "Question"
+  },    
+  {
+    "input": "What is z++?",
+    "output": "Question"
+  },
   {
     "input": "I'll see you when I get there.",
     "output": "Statement"
