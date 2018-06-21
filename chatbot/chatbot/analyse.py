@@ -4,6 +4,9 @@ import nltk
 import discordIntergration
 from textblob import Word
 import userInput
+import requests
+import json
+
 #from textblob.wordnet import *
 
 import database
@@ -16,6 +19,24 @@ def IsQuestion(text):
     if ("?" in text):
         return True               
     return False
+
+def APIrequester(message):
+    url = "http://localhost:5000/analyse"
+    try:
+        r = requests.post(url, json={"data": message})
+        r = r.json()
+        
+        
+
+
+
+        return r
+    except:
+        print("Something went wrong.")
+        print(r)
+
+
+
 
 
 def AnalyseText(text):

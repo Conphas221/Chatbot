@@ -11,3 +11,13 @@ def HandleInput(userInput):
     keywords = HandleInputInternal(userInput)
     for keyword in keywords:
         print("Keyword :", keyword.spot, "\n Categories:", keyword.categories,"\n")
+
+def HandleInputInternalneural(userInput):
+    # analyse the text and return the analysed data
+    keywords = analyse.APIrequester(userInput)
+    return keywords
+
+def HandleInputneural(userInput):
+    keywords = HandleInputInternal(userInput)
+    for keyword in keywords:
+        print("Keyword :", keyword.spot, "\n Categories:", keyword.categories,"\n")

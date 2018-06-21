@@ -1,6 +1,7 @@
 import time
 import _datetime as datetime
 import analyse
+from analyse import APIrequester
 import discordIntergration
 import userInput
 import database
@@ -43,11 +44,7 @@ def RunCommand(command, args):
     return False
 
 
-def APIrequester(message):
 
-    url = "http://localhost:5000/analyse"
-    r = requests.post(url, json={"data": message})
-    print(r)
     
  
 
@@ -66,7 +63,7 @@ def main():
     # Register commands
     RegisterCommand("-b", lambda args : discordIntergration.main())
     RegisterCommand("quit", lambda args : exit())
-    RegisterCommand("-r", lambda args : startapi())
+
 
 
 
@@ -85,10 +82,11 @@ def main():
         blob = TextBlob(user_input) #creates a textblob variable of the input
 
 
+
         # Run a command, if the command is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False) and (blob.words != []): #makes sure HandleInput is not passed null or empty
            #userInput.HandleInput(user_input)
-           APIrequester(user_input)
+           analyse.APIrequester(user_input)
            # print(user_input)
            #analyse.wordnet(user_input)
 

@@ -14,9 +14,14 @@ def log(message):
     file.write(message + "\n")
     file.close()
 
-bot = ChatBot("project7-8 bot", trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
-#bot.train("chatterbot.corpus.english")
+
+
+bot = ChatBot("Liabeter2", trainer='chatterbot.trainers.UbuntuCorpusTrainer')
+bot.train()
 client = discord.Client()
+client.logout()
+client.close()
+
 
 #function that triggers on the event on_message, telling the bot to read the message
 @client.event
@@ -31,9 +36,11 @@ async def on_message(message):
 
     resultString = ""
     feedbackString = ""
-    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):
+   # if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content):# Lia
+    if not message.channel.is_private and not ("<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content): #pj78 bot
         try:
             keywords = userInput.HandleInputInternal(message.content)
+            #keywords = analyse.APIrequester(message.content)
             if(len(keywords) > 0):
                 database.addMessageToDB(message, keywords)
                 console.writeline("Found keyword(s) in last message.")
@@ -92,22 +99,45 @@ async def on_message(message):
         else:
             if message.content.startswith("!"):
                 try:
-                    keywords = userInput.HandleInputInternal(message.content[1:])
+                    #keywords = userInput.HandleInputInternal(message.content[1:])
+                    keyword1 = analyse.APIrequester(message.content[1:])
+                    keywords = keyword1['keywords']
+
                     resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                    for keyword in keywords:
-                        title = keyword.title
-                        author = database.GetTopAuthorWith(title, message.author.name.lower())
-                        resultString = resultString + "\n" + keyword.title + ": " + author
+                    for i in range(0,len(keywords)):
+                        keyword = keywords[i]
+                        author = database.GetTopAuthorWith(keyword, message.author.name.lower())
+                        resultString = resultString + "\n" + keyword + ": " + author
+        
+                        
+                        #resultString = resultString + "\n" + keyword.title + ": " + author
+                    #for keyword in keywords['keywords']:
+                        #title = keyword.title
+                        #author = database.GetTopAuthorWith(title, message.author.name.lower())
+                        #resultString = resultString + "\n" +": " + author
+                        #resultString = resultString + "\n" + keyword.title + ": " + author
                 except:
                     resultString = ""
-            elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:
+            elif "<@&446757834093494272>" in message.content or "<@455668662066741250>" in message.content: #pj78
+            #elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:#lia
                 try:
-                    keywords = userInput.HandleInputInternal(message.content)
+                    #keywords = userInput.HandleInputInternal(message.content)
+               
+                    keyword1 = analyse.APIrequester(message.content[21:])
+
+                    
+                    keywords = keyword1['keywords']
+
                     resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                    for keyword in keywords:
-                        title = keyword.title
-                        author = database.GetTopAuthorWith(title, message.author.name.lower())
-                        resultString = resultString + "\n" + keyword.title + ": " + author
+                    for i in range(0,len(keywords)):
+                        keyword = keywords[i]
+                        author = database.GetTopAuthorWith(keyword, message.author.name.lower())
+                        resultString = resultString + "\n" + keyword + ": " + author
+
+                    #for keyword in keywords:
+                    #    title = keyword.title
+                    #    author = database.GetTopAuthorWith(title, message.author.name.lower())
+                    #    resultString = resultString + "\n" + keyword.title + ": " + author
                 except:
                     resultString = ""
             else:
@@ -157,5 +187,6 @@ def main():
     file.close()
 
     # run discord bot
-    TOKEN = 'NDU4NjM1OTUwNDI4NTIwNDcy.Dgqhlw.KcYdamEg9IeHrVVqyf5DhjsUc2g'
+    #TOKEN = 'NDU4NjM1OTUwNDI4NTIwNDcy.Dgqhlw.KcYdamEg9IeHrVVqyf5DhjsUc2g' #Lia
+    TOKEN = 'NDU1NjY4NjYyMDY2NzQxMjUw.Df_XJw.94MbMvFY8Br9GTtHHFeO_0NTLuI' #p78 bot
     client.run(TOKEN)
