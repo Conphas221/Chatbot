@@ -4,6 +4,7 @@ import nltk
 import discordIntergration
 from textblob import Word
 import userInput
+import requests
 #from textblob.wordnet import *
 
 import database
@@ -23,6 +24,16 @@ def AnalyseText(text):
     response = datatxt.nex(text,include="categories")
 
     return response.annotations
+
+def APIrequester(message):
+    url = "http://localhost:5000/analyse"
+
+    r = requests.post(url, json={"data": message})
+    data = r.json()
+
+
+    print(data)
+
 
 
 def sentiment(text):

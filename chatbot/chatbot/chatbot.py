@@ -92,7 +92,7 @@ def main():
         # Run a command, if the command is not found, analyse the user input
         if (RunCommand(user_input, user_input) == False) and (blob.words != []): #makes sure HandleInput is not passed null or empty
            #userInput.HandleInput(user_input)
-           APIrequester(user_input)
+           analyse.APIrequester(user_input)
            # print(user_input)
            #analyse.wordnet(user_input)
 
