@@ -9,7 +9,7 @@
     "nodejs",
     "ruby",
     "rails",
-    "d",
+    "android",
     "java",
     "html",
     "css",
@@ -26,6 +26,7 @@
 	
 
     "bug",
+    "debug",
     "issue",
     "error",
     "exception",

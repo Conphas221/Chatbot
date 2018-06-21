@@ -1,10 +1,13 @@
 import analyse
 import database
 
+
 # Function that handles the user input internally
 def HandleInputInternal(userInput):
     # analyse the text and return the analysed data
     keywords = analyse.AnalyseText(userInput)
+    api_data = APIrequester(userInput)
+
     return keywords
 
 def HandleInput(userInput):

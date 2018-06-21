@@ -1,7 +1,7 @@
+#import discord
 import time
 import _datetime as datetime
 import analyse
-from analyse import APIrequester
 import discordIntergration
 import userInput
 import database
@@ -10,7 +10,12 @@ import nltk
 import requests
 from requests.adapters import HTTPAdapter
 import json
+import os
 import os.path as path
+import threading
+
+
+
 #nltk.download('punkt')
 #nltk.download('wordnet')
 # Command class
@@ -42,13 +47,15 @@ def RunCommand(command, args):
             return True
 
     return False
-
-
-
-    
  
 
+def startapi():
+    os.chdir("../api")
 
+    import subprocess
+    from subprocess import Popen
+    subprocess.run("node index.js", shell=True)
+    
     
    
 
@@ -61,9 +68,9 @@ def RunCommand(command, args):
 # Define main() function
 def main():
     # Register commands
-    RegisterCommand("-b", lambda args : discordIntergration.main())
+    RegisterCommand("-b", lambda args : threading.Thread(target = discordIntergration.main).start())
     RegisterCommand("quit", lambda args : exit())
-
+    RegisterCommand("-r", lambda args : threading.Thread(target = startapi).start())
 
 
 
@@ -80,7 +87,6 @@ def main():
         # Obtain the user input from the command line
         user_input = input().lower()
         blob = TextBlob(user_input) #creates a textblob variable of the input
-
 
 
         # Run a command, if the command is not found, analyse the user input
