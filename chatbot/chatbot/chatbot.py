@@ -1,7 +1,7 @@
-#import discord
 import time
 import _datetime as datetime
 import analyse
+from analyse import APIrequester
 import discordIntergration
 import userInput
 import database

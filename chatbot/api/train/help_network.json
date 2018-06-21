@@ -1,9 +1,5 @@
 [
     {
-        "input": "I could use some help with a bug I am currently facing",
-        "output": "True"
-    },
-    {
         "input": "I could use some assistance with a bug I am currently facing",
         "output": "True"
     },
