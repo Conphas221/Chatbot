@@ -100,16 +100,18 @@ async def on_message(message):
         else:
             if message.content.startswith("!"):
                 try:
-                    keyword1 = analyse.APIrequester(message.content[1:])
-                    keywords = keyword1['keywords']
-                    needshelp = keyword1['needsHelp']
-                    isquestion = keyword1['isQuestion']
+                    checks = analyse.APIrequester(message.content[1:])
+                    keywords = userInput.HandleInputInternal(message.content[1:])
+                    needshelp = checks['needsHelp']
+                    isquestion = checks['isQuestion']
+                    
                     if needshelp or isquestion:
                         resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                        for i in range(0,len(keywords)):
-                            keyword = keywords[i]
-                            author = database.GetTopAuthorWith(keyword, message.author.name.lower())
-                            resultString = resultString + "\n" + keyword + ": " + author
+                        for keyword in keywords:
+                            title = keyword.title
+                            author = database.GetTopAuthorWith(title, message.author.name.lower())
+                            resultString = resultString + "\n" + keyword.title + ": " + author
+
         
                 except:
                     resultString = ""
@@ -117,15 +119,17 @@ async def on_message(message):
             elif "<@&446757834093494272>" in message.content or "<@458635950428520472>" in message.content:#lia
                 try:
                
-                    keyword1 = analyse.APIrequester(message.content[21:])
-                    keywords = keyword1['keywords']
-                    needshelp = keyword1['needsHelp']
+                    checks = analyse.APIrequester(message.content[21:])
+                    keywords = userInput.HandleInputInternal(message.content[21:])
+                    needshelp = checks['needsHelp']
+                    isquestion = checks['isQuestion']
+                 
                     if needshelp or isquestion:
                         resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                        for i in range(0,len(keywords)):
-                            keyword = keywords[i]
-                            author = database.GetTopAuthorWith(keyword, message.author.name.lower())
-                            resultString = resultString + "\n" + keyword + ": " + author
+                        for keyword in keywords:
+                            title = keyword.title
+                            author = database.GetTopAuthorWith(title, message.author.name.lower())
+                            resultString = resultString + "\n" + keyword.title + ": " + author
 
                 except:
                     resultString = ""
