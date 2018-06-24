@@ -11,26 +11,6 @@
     "input": "Do you like traveling?",
     "output": "Question"
   },
-    {
-    "input": "What is q??",
-    "output": "Question"
-  },
-    {
-    "input": "What is j?,",
-    "output": "Question"
-  },
-    {
-    "input": "What is k?",
-    "output": "Question"
-  },
-      {
-    "input": "What is #?",
-    "output": "Question"
-  },
-    {
-    "input": "What is a kilobyte?",
-    "output": "Question"
-},
   {
     "input": "What time are we meeting?",
     "output": "Question"
@@ -40,7 +20,23 @@
     "output": "Question"
   },
     {
-    "input": "How do you use k-means?",
+    "input": "Did you receive a c&d?",
+    "output": "Question"
+  },
+      {
+    "input": "He is not a lawyer, right?",
+    "output": "Question"
+  },
+        {
+    "input": "How many query's do you have?",
+    "output": "Question"
+  },
+          {
+    "input": "Should I use f# or c# here?",
+    "output": "Question"
+  },
+    {
+    "input": "How do you use kmeans?",
     "output": "Question"
   },
       {

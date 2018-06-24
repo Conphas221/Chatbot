@@ -7,6 +7,20 @@
         "input": "Could you provide me some support to fix this issue?",
         "output": "True"
     },
+	    {
+        "input": "Could you provide me some support to fix this null_pointer.error?",
+        "output": "True"
+    },
+		    {
+        "input": "Could you provide me some support to fix this java compile error?",
+        "output": "True"
+    },
+
+		{
+	        "input": "Could you provide me some support to fix this ;:></!@#$%^&*_-=+~qwertyuiopasdfghjklzxcvbnm,.1023645789     /  [    ]   {    }   java compile error? \\",
+        "output": "True"
+    },
+	
     {
         "input": "I need some help with a bug I have in C++",
         "output": "True"
@@ -16,7 +30,55 @@
         "output": "True"
     },
     {
-        "input": "Do you need help?",
+        "input": "Do you need help with sql?",
+        "output": "False"
+    },
+	    {
+        "input": "Do you need help with a query?",
+        "output": "False"
+    },
+	    {
+        "input": "Do you need help with c#?",
+        "output": "False"
+    },
+	    {
+        "input": "Do you need help with f#?",
+        "output": "False"
+    },
+	    {
+        "input": "Do you need help with kmeans?",
+        "output": "False"
+    },
+		    {
+        "input": "Do you need help with Ba`al?",
+        "output": "False"
+    },
+	    {
+        "input": "Do you need help with z++?",
+        "output": "False"
+    },
+		    {
+        "input": "I am a laywer, do you need help?",
+        "output": "False"
+    },
+		    {
+        "input": "Do you need help with query's?",
+        "output": "False"
+    },
+		    {
+        "input": "Do you need help with xamarin?",
+        "output": "False"
+    },
+			    {
+        "input": "Do you need help with a kilobyte?",
+        "output": "False"
+    },
+	{
+	        "input": "Do you need help with linq",
+        "output": "False"
+    },
+	{
+		        "input": "Do you need help with a c&d?",
         "output": "False"
     },
     {

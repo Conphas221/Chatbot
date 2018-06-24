@@ -31,6 +31,7 @@ async def on_message(message):
         return
 
     print("Message received from {0}".format(message.author.name))
+    message.content = message.content.lower()
     print(message.content)
     addLog(str(message.author.name), str(message.content))
 

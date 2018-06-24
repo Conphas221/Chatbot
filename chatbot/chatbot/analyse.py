@@ -25,11 +25,6 @@ def APIrequester(message):
     try:
         r = requests.post(url, json={"data": message})
         r = r.json()
-        
-        
-
-
-
         return r
     except:
         print("Something went wrong.")
@@ -48,18 +43,12 @@ def AnalyseText(text):
 
 def sentiment(text):
     text2 = TextBlob(text)
-    #print (text2.sentiment)
     return text2.polarity
     
 def wordnet(text):
-    #word = Word("octopus")
-    #word.get_synsets
-    #print (word)
+
     syns =Word(text)
     print(syns.lemmatize())
-    #print(syns[0].lemmas()[0].name())
-    #Word("octopus").definition
-    #print(syns[0].definition())
     try:
         print(syns.detect_language())
     except:
