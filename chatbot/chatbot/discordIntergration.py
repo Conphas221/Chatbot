@@ -102,12 +102,14 @@ async def on_message(message):
                 try:
                     keyword1 = analyse.APIrequester(message.content[1:])
                     keywords = keyword1['keywords']
-
-                    resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                    for i in range(0,len(keywords)):
-                        keyword = keywords[i]
-                        author = database.GetTopAuthorWith(keyword, message.author.name.lower())
-                        resultString = resultString + "\n" + keyword + ": " + author
+                    needshelp = keyword1['needsHelp']
+                    isquestion = keyword1['isQuestion']
+                    if needshelp or isquestion:
+                        resultString = "These are the keywords I found in your message and a person that might be able to help you: "
+                        for i in range(0,len(keywords)):
+                            keyword = keywords[i]
+                            author = database.GetTopAuthorWith(keyword, message.author.name.lower())
+                            resultString = resultString + "\n" + keyword + ": " + author
         
                 except:
                     resultString = ""
@@ -117,12 +119,13 @@ async def on_message(message):
                
                     keyword1 = analyse.APIrequester(message.content[21:])
                     keywords = keyword1['keywords']
-
-                    resultString = "These are the keywords I found in your message and a person that might be able to help you: "
-                    for i in range(0,len(keywords)):
-                        keyword = keywords[i]
-                        author = database.GetTopAuthorWith(keyword, message.author.name.lower())
-                        resultString = resultString + "\n" + keyword + ": " + author
+                    needshelp = keyword1['needsHelp']
+                    if needshelp or isquestion:
+                        resultString = "These are the keywords I found in your message and a person that might be able to help you: "
+                        for i in range(0,len(keywords)):
+                            keyword = keywords[i]
+                            author = database.GetTopAuthorWith(keyword, message.author.name.lower())
+                            resultString = resultString + "\n" + keyword + ": " + author
 
                 except:
                     resultString = ""
